@@ -1,0 +1,15 @@
+---
+toc: false
+---
+
+::: column-screen
+[![](https://live.staticflickr.com/7023/6472252333_d01307e3a1_b.jpg){style="margin: 0; padding-top: 0px" width="1920"}](https://www.flickr.com/photos/floridahikes/6472252333/in/album-72157628320834221/)
+:::
+
+# Robinson Preserve Sport Fish Tagging Project
+
+## Tracking the movement of juvenile sport fish from a habitat restoration site to fished populations of Tampa Bay
+
+Many commercially and recreationally important fishes use estuarine habitats as juvenile nursery grounds. However, many of these habitats are threatened by a number of stressors, including rising sea levels and increasing urbanization. Restoration and preservation of affected juvenile habitats can help support adult populations.
+
+The Robinson Preserve Sport Fish Tagging Project was initiated to determine the extent to which the habitat restoration at [Robinson Preserve](https://www.mymanatee.org/departments/parks___natural_resources/parks__preserves___beaches/robinson_preserve), a 682-acre area with a variety of restored fisheries nursery habitat, contributes juvenile sport fish to adult populations in the greater Tampa Bay area. The contribution of juveniles is a major information gap that exists for many habitat restoration projects, despite being a realistic metric for evaluating restoration success. With the help of [Manatee County Department of Parks and Natural Resources](https://www.mymanatee.org/departments/parks___natural_resources) and the [National Oceanic and Atmospheric Administration Office of Habitat Conservation](https://www.fisheries.noaa.gov/about/office-habitat-conservation), researchers at the [Florida Fish and Wildlife Research Institute](https://myfwc.com/research/) are seeking to fill this information gap by tagging and tracking the movement of juvenile sport fishes from and within Robinson Preserve.
