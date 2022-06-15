@@ -2,15 +2,71 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Robinson Preserve",
+    "title": "Robinson Preserve Sport Fish",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "{.{.column-screen} width=“1600”}"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About the Project",
     "section": "",
     "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data",
+    "section": "",
+    "text": "Coming Soon!"
+  },
+  {
+    "objectID": "updates.html",
+    "href": "updates.html",
+    "title": "Project Updates",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nWelcome to our website! In this Project Updates section, we will provide information on the latest progress our research team has made towards assessing juvenile contributions from Robinson Preserve to Tampa Bay adult populations. Stay tuned!\n\n\n\n\n\n\nJun 15, 2022\n\n\nJon Peake\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "updates/first.html",
+    "href": "updates/first.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to our website! In this Project Updates section, we will provide information on the latest progress our research team has made towards assessing juvenile contributions from Robinson Preserve to Tampa Bay adult populations. Stay tuned!"
+  },
+  {
+    "objectID": "index.html#tracking-the-emigration-of-juvenile-sport-fish-from-a-habitat-restoration-site-to-fished-populations-of-tampa-bay",
+    "href": "index.html#tracking-the-emigration-of-juvenile-sport-fish-from-a-habitat-restoration-site-to-fished-populations-of-tampa-bay",
+    "title": "Robinson Preserve Sport Fish",
+    "section": "Tracking the emigration of juvenile sport fish from a habitat restoration site to fished populations of Tampa Bay",
+    "text": "Tracking the emigration of juvenile sport fish from a habitat restoration site to fished populations of Tampa Bay\nThis study will determine whether the habitat restoration at Robinson Preserve, designed to promote fisheries nursery habitat, contributes juvenile sport fish to the fished population. The contribution of juveniles is a major information gap that exists for many habitat restoration projects, despite being a realistic metric for evaluating restoration success."
+  },
+  {
+    "objectID": "preserve.html",
+    "href": "preserve.html",
+    "title": "Robinson Preserve",
+    "section": "",
+    "text": "Coming Soon!"
+  },
+  {
+    "objectID": "tagging.html",
+    "href": "tagging.html",
+    "title": "Tagging Studies",
+    "section": "",
+    "text": "Coming Soon!"
+  },
+  {
+    "objectID": "index.html#tracking-the-movement-of-juvenile-sport-fish-from-a-habitat-restoration-site-to-fished-populations-of-tampa-bay",
+    "href": "index.html#tracking-the-movement-of-juvenile-sport-fish-from-a-habitat-restoration-site-to-fished-populations-of-tampa-bay",
+    "title": "Robinson Preserve Sport Fish",
+    "section": "Tracking the movement of juvenile sport fish from a habitat restoration site to fished populations of Tampa Bay",
+    "text": "Tracking the movement of juvenile sport fish from a habitat restoration site to fished populations of Tampa Bay\nMany commercially and recreationally important fishes use estuarine habitats as juvenile nursery grounds. However, many of these habitats are threatened by a number of stressors, including rising sea levels and increasing urbanization. Restoration and preservation of affected juvenile habitats can help support adult populations.\nThe Robinson Preserve Sport Fish Tagging Project was initiated to determine the extent to which the habitat restoration at Robinson Preserve, a 682-acre area with a variety of restored fisheries nursery habitat, contributes juvenile sport fish to adult populations in the greater Tampa Bay area. The contribution of juveniles is a major information gap that exists for many habitat restoration projects, despite being a realistic metric for evaluating restoration success. With the help of Manatee County Department of Parks and Natural Resources and the National Oceanic and Atmospheric Administration Office of Habitat Conservation, researchers at the Florida Fish and Wildlife Research Institute are seeking to fill this information gap by tagging and tracking the movement of juvenile sport fishes from and within Robinson Preserve."
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team Members",
+    "section": "",
+    "text": "Coming Soon!"
   }
 ]
