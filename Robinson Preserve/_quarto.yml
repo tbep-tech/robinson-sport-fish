@@ -2,31 +2,17 @@ project:
   type: website
 
 website:
-  title: "Robinson Preserve Sport Fish"
+  title: "Robinson Preserve"
   navbar:
     background: primary
-    right:
+    left:
       - href: index.qmd
         text: Home
-      - text: About
-        menu:
-        - href: preserve.qmd
-          text: Robinson Preserve
-        - href: tagging.qmd
-          text: Tagging
-      - updates.qmd
-      - data.qmd
-      - contact.qmd
-        
-        
-        
-        
+      - about.qmd
 
 format:
   html:
-    theme: 
-      light: flatly
-      dark: darkly
+    theme: cosmo
     css: styles.css
     toc: true
 
