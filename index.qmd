@@ -1,5 +1,9 @@
 ---
 toc: false
+sidebar: false
+format:
+  html:
+    css: styles_splash.css
 ---
 
 ::: column-screen

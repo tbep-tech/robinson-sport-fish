@@ -1,5 +1,6 @@
 ---
 title: "Data"
+sidebar: false
 ---
 
 # Coming Soon!

@@ -13,11 +13,18 @@ website:
         menu:
         - href: preserve.qmd
           text: Robinson Preserve
-        - href: tagging.qmd
-          text: Tagging
+        - sidebar:tagging
       - updates.qmd
       - data.qmd
       - contact.qmd
+  sidebar:
+    - id: tagging
+      title: "Tagging"
+      style: "docked"
+      background: light
+      contents:
+        - tagging/importance.qmd
+        - tagging/works.qmd
         
         
         
