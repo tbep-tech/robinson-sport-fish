@@ -20,8 +20,7 @@ website:
   sidebar:
     - id: tagging
       title: "Tagging"
-      style: "docked"
-      background: light
+      style: "floating"
       contents:
         - tagging/importance.qmd
         - tagging/works.qmd
