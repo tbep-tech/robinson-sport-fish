@@ -8,7 +8,20 @@ sidebar: false
 ```{r}
 #| echo: false
 library(timevis)
-timevis() %>%
+
+tv <- timevis() %>%
    addItem(list(id = "date1", content = '<a href ="updates/first.html">Website Deployed</a>', start = "2022-06-16"))
+
+style <- "
+  /* alternating column backgrounds */
+  .vis-time-axis {
+    background: white;
+  }
+"
+
+tv <- htmltools::tagList(htmltools::tags$style(style), tv)
+tv
+
+
 
 ```
