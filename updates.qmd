@@ -7,10 +7,17 @@ sidebar: false
 
 ```{r}
 #| echo: false
+#| message: false
 library(timevis)
+library(dplyr)
 
-tv <- timevis() %>%
-   addItem(list(id = "date1", content = '<a href ="updates/first.html">Website Deployed</a>', start = "2022-06-16"))
+timeItems <- data.frame(id = character(),
+                        content = character(),
+                        start = character()) %>%
+  add_row(id = "date1", content = '<a href ="/updates/receivers.html">Receivers Deployed</a>', start = "2022-04-18") %>%
+  add_row(id = "date2", content = '<a href ="/updates/first.html">Website Deployed</a>', start = "2022-06-16")
+
+tv <- timevis(timeItems,fit = TRUE)
 
 style <- "
   /* alternating column backgrounds */

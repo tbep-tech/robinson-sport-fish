@@ -25,7 +25,7 @@
     "href": "updates.html",
     "title": "Project Updates",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nWelcome\n\n\n\n\n\nWelcome to our website! In this Project Updates section, we will provide information on the latest progress our research team has made towards assessing juvenile contributions from Robinson Preserve to Tampa Bay adult populations. Stay tuned!\n\n\n\n\n\n\nJun 15, 2022\n\n\nJon Peake\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nReceiver Deployment\n\n\n\n\n\nOn April 18th, 2022, 13 acoustic receivers were deployed at various locations around Robinson Preserve to monitor the movement of juvenile sport fishes within and out of the preserve area.\n\n\n\n\n\n\nApr 18, 2022\n\n\nJon Peake\n\n\n\n\n\n\n\n\nWelcome\n\n\n\n\n\nWelcome to our website! In this Project Updates section, we will provide information on the latest progress our research team has made towards assessing juvenile contributions from Robinson Preserve to Tampa Bay adult populations. Stay tuned!\n\n\n\n\n\n\nJun 15, 2022\n\n\nJon Peake\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "tagging.html",
@@ -40,5 +40,26 @@
     "title": "How Acoustic Tagging Works",
     "section": "",
     "text": "How Acoustic Tagging Works\nComing Soon!"
+  },
+  {
+    "objectID": "index.html#tracking-juvenile-sport-fish-movement-from-a-habitat-restoration-site-to-fished-populations-of-tampa-bay",
+    "href": "index.html#tracking-juvenile-sport-fish-movement-from-a-habitat-restoration-site-to-fished-populations-of-tampa-bay",
+    "title": "Robinson Preserve Sport Fish",
+    "section": "Tracking juvenile sport fish movement from a habitat restoration site to fished populations of Tampa Bay",
+    "text": "Tracking juvenile sport fish movement from a habitat restoration site to fished populations of Tampa Bay\nMany commercially and recreationally important fishes use estuarine habitats as juvenile nursery grounds. However, many of these habitats are threatened by a number of stressors, including rising sea levels and increasing urbanization. Restoration and preservation of affected juvenile habitats can help support adult populations.\n\n\n\n\n\n\nThe Robinson Preserve Sport Fish Tagging Project was initiated to determine the extent to which the habitat restoration at Robinson Preserve, a 682-acre area with a variety of restored fisheries nursery habitat, contributes juvenile sport fish to adult populations in the greater Tampa Bay area. The contribution of juveniles is a major information gap that exists for many habitat restoration projects, despite being a realistic metric for evaluating restoration success. With the help of Manatee County Department of Parks and Natural Resources and the National Oceanic and Atmospheric Administration Office of Habitat Conservation, researchers at the Florida Fish and Wildlife Research Institute are seeking to fill this information gap by tagging and tracking the movement of juvenile sport fishes from and within Robinson Preserve."
+  },
+  {
+    "objectID": "updates/receivers.html",
+    "href": "updates/receivers.html",
+    "title": "Receiver Deployment",
+    "section": "",
+    "text": "On April 18th, 2022, 13 acoustic receivers were deployed at various locations around Robinson Preserve to monitor the movement of juvenile sport fishes within and out of the preserve area."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Questions and comments about the project or the website can be sent to Meagan Schrandt. All source content for the website can be viewed on Github. All data were obtained through the FWC Fish and Wildlife Research Institute in collaboration with Manatee County and the National Oceanic and Atmospheric Administration."
   }
 ]

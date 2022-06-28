@@ -3,4 +3,102 @@ title: "Data"
 sidebar: false
 ---
 
-# Coming Soon!
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+library(sf)
+library(mapview)
+library(leafpop)
+
+#### Prep spatial data layers ####
+
+# read in Tampa Bay Shoreline shapefile
+TBshore <- st_read('shapefiles/Tampa_Bay_Shoreline.shp', quiet = T) %>%
+  st_transform(4326)
+
+# read in Robinson Preserve outline polygon from Manatee County
+preservedat <- st_read('shapefiles/Parks_and_Preserves.shp', quiet = T) %>%
+  filter(NAME == 'Robinson Preserve') %>%
+  select(NAME, TOTADDRESS, ZIPCODE, PARK_TYPE, ACREAGE, MANAGEMENT, OWNER_NAME, geometry)
+preservedat.shp <- preservedat %>%
+  st_transform(4326)
+  
+# the county shapefile is in WGS 84 and is a multipolygon
+
+# read in Robinson Preserve expansion project outline polygon
+expansiondat <- st_read('shapefiles/RobPres_Expansion_Poly.shp', quiet = T) %>%
+  select(Entity, Layer, DocName, DocType, geometry) %>%
+  #need to transform from NAD83 to WGS 84
+  st_transform(4326)
+
+#read in FIM pond outlines
+ponddat <- st_read('shapefiles/Robinson_Preserve.shp', quiet = T) %>%
+  mutate(Pond = str_sub(FolderPath, 24, 29)) %>%
+  mutate(Type = case_when(Pond %in% c("Pond_6", "Pond_7") ~ "Natural",
+                          TRUE ~ "Restored")) %>%
+  #group by ponds and make them into polygon outlines
+  group_by(Pond, Type) %>%
+  summarise() %>%
+  st_cast("POLYGON") %>%
+  #for the outer polygon
+  st_convex_hull()
+
+#locations of water loggers installed during restoration monitoring (different grant than acoustics)
+loggerdat <- read.csv("shapefiles/RobPres_WaterLogger_loc.csv", header = T, stringsAsFactors = F)
+logger.shp <- loggerdat %>%
+  filter(Logger.. != 31) %>%
+  select(Logger.Type, Pond = Location, Notes, LAT_DD, LONG_DD) %>%
+  #specify lat/long and the WGS coord system as 4326
+  st_as_sf(coords = c('LONG_DD', 'LAT_DD'), crs = 4326)
+
+#Locations of acoustic receivers
+receiverdat <- read.csv("shapefiles/AcousticReceiver_loc_deployed.csv", header = T, stringsAsFactors = F)
+receiver.shp <- receiverdat %>%
+  mutate(Longitude_dd = -1*Longitude_dd) %>%
+  #specify lat/long and the WGS coord system as 4326
+  st_as_sf(coords = c('Longitude_dd', 'Latitude_dd'), crs = 4326)
+
+#approximate location of Rob Preserve entry/exit points
+openingdat <- read.csv("shapefiles/RobPres_IngressEgress_loc.csv", header = T, stringsAsFactors = F)
+opening.shp <- openingdat %>%
+  #specify lat/long and the WGS coord system as 4326
+  st_as_sf(coords = c('LONG_DD', 'LAT_DD'), crs = 4326)
+
+#### Prep data visualizations ####
+water_dat <- data.frame(x = 1, y = 1)
+receiver_dat <- data.frame(x = 1, y = 1)
+
+water_log <- ggplot(water_dat, aes(x, y)) +
+  geom_line()
+receiver_log <- ggplot(receiver_dat, aes(x, y)) +
+  geom_line()
+
+mapviewOptions(basemaps = c("Esri.WorldImagery", "OpenStreetMap"),
+               legend.pos = "topright")
+mapview(preservedat, 
+        col.regions = "lightgreen", 
+        alpha.regions = 0.2, 
+        layer.name = "Robinson Preserve") +
+  mapview(ponddat, 
+          col.regions = "lightblue", 
+          layer.name = "Ponds") +
+  mapview(opening.shp, 
+          zcol = "Type", 
+          col.regions = c("Red", "Black"),
+          alpha.regions = 10, 
+          cex = 5, 
+          layer.name = "Exit/Entry Points") +
+  mapview(logger.shp, 
+          col.regions = "blue", 
+          cex = 4.5, 
+          layer.name = "Water_Air Loggers", 
+          popup = popupGraph(water_log)) +
+  mapview(receiver.shp, 
+          col.regions = "yellow", 
+          cex = 8, 
+          alpha.regions = 10, 
+          layer.name = "Receiver Locations",
+          popup = popupGraph(receiver_log))
+```
