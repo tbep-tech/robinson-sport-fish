@@ -83,17 +83,17 @@ mapview(preservedat,
         layer.name = "Robinson Preserve") +
   mapview(ponddat, 
           col.regions = "lightblue", 
-          layer.name = "Ponds") +
+          layer.name = "Waterbodies") +
   mapview(opening.shp, 
           zcol = "Type", 
           col.regions = c("Red", "Black"),
           alpha.regions = 10, 
           cex = 5, 
-          layer.name = "Exit/Entry Points") +
+          layer.name = "Potential Exit/Entry Points") +
   mapview(logger.shp, 
           col.regions = "blue", 
           cex = 4.5, 
-          layer.name = "Water_Air Loggers", 
+          layer.name = "Water/Air Loggers", 
           popup = popupGraph(water_log)) +
   mapview(receiver.shp, 
           col.regions = "yellow", 

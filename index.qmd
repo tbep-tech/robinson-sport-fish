@@ -4,6 +4,7 @@ sidebar: false
 format:
   html:
     css: styles_splash.css
+    anchor-sections: false
 ---
 
 ::: column-screen
@@ -24,6 +25,7 @@ library(sf)
 library(mapview)
 library(ggpubr)
 library(png)
+library(icons)
 
 #### Prep spatial data layers ####
 
@@ -90,9 +92,9 @@ opening.shp <- openingdat %>%
 mapviewOptions(basemaps = c("Esri.WorldImagery", "OpenStreetMap"),
                legend.pos = "topright")
 mapview(preservedat, col.regions = "lightgreen", alpha.regions = 0.2, layer.name = "Robinson Preserve") +
-  mapview(ponddat, col.regions = "lightblue", layer.name = "Ponds") +
+  mapview(ponddat, col.regions = "lightblue", layer.name = "Waterbodies") +
   mapview(opening.shp, zcol = "Type", col.regions = c("Red", "Black"),
-          alpha.regions = 10, cex = 5, layer.name = "Exit/Entry Points")
+          alpha.regions = 10, cex = 5, layer.name = "Potential Exit/Entry Points")
   # mapview(logger.shp, col.regions = "blue", cex = 4.5, layer.name = "Water_Air Loggers") +
   # mapview(receiver.shp, col.regions = "yellow", cex = 8, alpha.regions = 10, layer.name = "Possible Receiver Locations")
 
@@ -159,3 +161,25 @@ pointdat.shp <- pointdat %>%
 ```
 
 The Robinson Preserve Sport Fish Tagging Project was initiated to determine the extent to which the habitat restoration at [Robinson Preserve](https://www.mymanatee.org/departments/parks___natural_resources/parks__preserves___beaches/robinson_preserve), a 682-acre area with a variety of restored fisheries nursery habitat, contributes juvenile sport fish to adult populations in the greater Tampa Bay area. The contribution of juveniles is a major information gap that exists for many habitat restoration projects, despite being a realistic metric for evaluating restoration success. With the help of [Manatee County Department of Parks and Natural Resources](https://www.mymanatee.org/departments/parks___natural_resources) and the [National Oceanic and Atmospheric Administration Office of Habitat Conservation](https://www.fisheries.noaa.gov/about/office-habitat-conservation), researchers at the [Florida Fish and Wildlife Research Institute](https://myfwc.com/research/) are seeking to fill this information gap by tagging and tracking the movement of juvenile sport fishes from and within Robinson Preserve.
+
+::: {layout-ncol="4" style="text-align: center; justify-content: center; align-items: center;"}
+### `r icon_style(fontawesome("tower-broadcast", style = "solid"), scale = 4)`
+
+<font size="+3">13</font>\
+Receivers Placed
+
+### `r icon_style(fontawesome("download", style = "solid"), scale = 4, 'text-align'="center")`
+
+<font size="+3">1</font>\
+Data Downloads
+
+### `r icon_style(fontawesome("fish-fins", style = "solid"), scale = 4)`
+
+<font size="+3">44</font>\
+Fish Identified
+
+### `r icon_style(fontawesome("tag", style = "solid"), scale = 4)`
+
+<font size="+3">22</font>\
+Fish Tagged
+:::

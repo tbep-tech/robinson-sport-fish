@@ -13,9 +13,20 @@ library(dplyr)
 
 timeItems <- data.frame(id = character(),
                         content = character(),
-                        start = character()) %>%
-  add_row(id = "date1", content = '<a href ="/updates/receivers.html">Receivers Deployed</a>', start = "2022-04-18") %>%
-  add_row(id = "date2", content = '<a href ="/updates/first.html">Website Deployed</a>', start = "2022-06-16")
+                        start = character(),
+                        end = character()) %>%
+  add_row(id = "receivers", 
+          content = '<a href ="/updates/receivers.html">Receivers Deployed</a>', 
+          start = "2022-04-18") %>%
+  add_row(id = "website", 
+          content = '<a href ="/updates/first.html">Website Deployed</a>', 
+          start = "2022-06-16") %>%
+  add_row(id = "start", 
+          content = "Project start; planning and purchasing begins", 
+          start = "2021-10-01") %>%
+  add_row(id = "tag1", 
+          content = '<a href ="/updates/tagging1.qmd.html">22 fish tagged</a>', 
+          start = "2022-04-27")
 
 tv <- timevis(timeItems,fit = TRUE)
 

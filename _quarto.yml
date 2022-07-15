@@ -13,22 +13,18 @@ website:
         menu:
         - href: preserve.qmd
           text: Robinson Preserve
-        - sidebar:tagging
+        - href: methods.qmd
+          text: Methodology
       - updates.qmd
       - data.qmd
       - contact.qmd
   sidebar:
-    - id: tagging
-      title: "Tagging"
+    - title: "Methods"
+      id: methodology
       style: "floating"
       contents:
         - tagging/importance.qmd
         - tagging/works.qmd
-        
-        
-        
-        
-
 format:
   html:
     theme: 

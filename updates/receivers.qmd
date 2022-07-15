@@ -7,6 +7,8 @@ sidebar: false
 
 On April 18th, 2022, 13 acoustic receivers were deployed at various locations around Robinson Preserve to monitor the movement of juvenile sport fishes within and out of the preserve area.
 
+![Acoustic receiver and water quality logger deployed in shallow seagrass bed adjacent to Robinson Preserve.](/images/receiver2.jpg)
+
 ```{r}
 #| echo: false
 #| message: false
@@ -95,13 +97,13 @@ mapview(preservedat,
         layer.name = "Robinson Preserve") +
   mapview(ponddat, 
           col.regions = "lightblue", 
-          layer.name = "Ponds") +
+          layer.name = "Waterbodies") +
   mapview(opening.shp, 
           zcol = "Type", 
           col.regions = c("Red", "Black"),
           alpha.regions = 10, 
           cex = 5, 
-          layer.name = "Exit/Entry Points") +
+          layer.name = "Potential Exit/Entry Points") +
   mapview(receiver.shp, 
           col.regions = "yellow", 
           cex = 8, 
