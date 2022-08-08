@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.305">
+<meta name="generator" content="quarto-1.0.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,13 +17,14 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 </style>
 
+
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -31,12 +32,12 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link class="quarto-color-scheme" id="quarto-text-highlighting-styles" href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
-<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" id="quarto-text-highlighting-styles" href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link class="quarto-color-scheme" href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="site_libs/bootstrap/bootstrap-dark.min.css">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,6 +79,12 @@ ul.task-list{list-style: none;}
       window['quarto-listing-loaded']();
     }
   });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 <script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
 <link href="site_libs/visjs-7.4.9/vis-timeline-graph2d.min.css" rel="stylesheet">
@@ -86,11 +93,12 @@ ul.task-list{list-style: none;}
 <script src="site_libs/timevis-binding-2.0.0/timevis.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-sidebar nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -153,8 +161,6 @@ ul.task-list{list-style: none;}
 
 
 
-
-
 <div class="quarto-title-meta">
 
     
@@ -172,13 +178,13 @@ ul.task-list{list-style: none;}
     background: white;
   }
 </style>
-<div id="htmlwidget-8a5b9edcda5dc9c6e182" class="timevis html-widget" style="width:100%;height:338px;">
+<div id="htmlwidget-597c863984539d8185e5" class="timevis html-widget" style="width:100%;height:338px;">
 <div class="btn-group zoom-menu">
 <button type="button" class="btn btn-default btn-lg zoom-in" title="Zoom in">+</button>
 <button type="button" class="btn btn-default btn-lg zoom-out" title="Zoom out">-</button>
 </div>
 </div>
-<script type="application/json" data-for="htmlwidget-8a5b9edcda5dc9c6e182">{"x":{"items":[{"id":"receivers","content":"<a href =\"/updates/receivers.html\">Receivers Deployed<\/a>","start":"2022-04-18"},{"id":"website","content":"<a href =\"/updates/first.html\">Website Deployed<\/a>","start":"2022-06-16"},{"id":"start","content":"Project start; planning and purchasing begins","start":"2021-10-01"},{"id":"tag1","content":"<a href =\"/updates/tagging1.qmd.html\">22 fish tagged<\/a>","start":"2022-04-27"}],"groups":null,"showZoom":true,"zoomFactor":0.5,"fit":true,"options":[],"height":null,"timezone":null,"api":[]},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-597c863984539d8185e5">{"x":{"items":[{"id":"receivers","content":"<a href =\"/updates/receivers.html\">Receivers Deployed<\/a>","start":"2022-04-18"},{"id":"website","content":"<a href =\"/updates/first.html\">Website Deployed<\/a>","start":"2022-06-16"},{"id":"start","content":"Project start; planning and purchasing begins","start":"2021-10-01"},{"id":"tag1","content":"<a href =\"/updates/tagging1.qmd.html\">22 fish tagged<\/a>","start":"2022-04-27"}],"groups":null,"showZoom":true,"zoomFactor":0.5,"fit":true,"options":[],"height":null,"timezone":null,"api":[]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -186,33 +192,8 @@ ul.task-list{list-style: none;}
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1651032000000" data-listing-file-modified-sort="1657895787239" data-listing-reading-time-sort="0.44">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1651032000000" data-listing-file-modified-sort="1659987311618" data-listing-reading-time-sort="0.44">
 <div class="thumbnail">
 <p><a href="./updates/tagging1.html"> <img src="./images/tagging1.jpg" class="thumnail-image"> </a></p>
 </div>
@@ -225,7 +206,7 @@ First Tags Deployed
 
 </div>
 <div class="listing-description">
-<p>From April 25- April 27th, FWRI staff caught, identified, and measured 43 sport fish in Robinson Preserve. They implanted acoustic tags in 22 fishes, including four tags in Red Drum (Sciaenops ocellatus), five tags in Atlantic Tarpon (Megalops atlanticus), and 13 tags in Common Snook (Centropomus undecimalis).</p>
+From April 25- April 27th, FWRI staff caught, identified, and measured 43 sport fish in Robinson Preserve. They implanted acoustic tags in 22 fishes, including four tags in Red Drum (<em>Sciaenops ocellatus</em>), five tags in Atlantic Tarpon (<em>Megalops atlanticus</em>), and 13 tags in Common Snook (<em>Centropomus undecimalis</em>).
 </div>
 </a>
 </div>
@@ -240,7 +221,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1650254400000" data-listing-file-modified-sort="1657896294367" data-listing-reading-time-sort="3.505">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1650254400000" data-listing-file-modified-sort="1657896294000" data-listing-reading-time-sort="3.505">
 <div class="thumbnail">
 <p><a href="./updates/receivers.html"> <img src="./images/receiver2.jpg" class="thumnail-image"> </a></p>
 </div>
@@ -253,7 +234,7 @@ Receiver Deployment
 
 </div>
 <div class="listing-description">
-<p>On April 18th, 2022, 13 acoustic receivers were deployed at various locations around Robinson Preserve to monitor the movement of juvenile sport fishes within and out of the preserve area.</p>
+On April 18th, 2022, 13 acoustic receivers were deployed at various locations around Robinson Preserve to monitor the movement of juvenile sport fishes within and out of the preserve area.
 </div>
 </a>
 </div>
@@ -268,7 +249,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1655265600000" data-listing-file-modified-sort="1656352813064" data-listing-reading-time-sort="0.18">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1655265600000" data-listing-file-modified-sort="1656352813000" data-listing-reading-time-sort="0.18">
 <div class="thumbnail">
 <a href="./updates/first.html">
 <div class="thumbnail-image">
@@ -285,7 +266,7 @@ Welcome
 
 </div>
 <div class="listing-description">
-<p>Welcome to our website! In this Project Updates section, we will provide information on the latest progress our research team has made towards assessing juvenile contributions from Robinson Preserve to Tampa Bay adult populations. Stay tuned!</p>
+Welcome to our website! In this Project Updates section, we will provide information on the latest progress our research team has made towards assessing juvenile contributions from Robinson Preserve to Tampa Bay adult populations. Stay tuned!
 </div>
 </a>
 </div>
@@ -305,8 +286,26 @@ Jon Peake
 No matching items
 </div>
 </div></main> <!-- /main -->
-<script type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
   const disableStylesheet = (stylesheets) => {
     for (let i=0; i < stylesheets.length; i++) {
       const stylesheet = stylesheets[i];
@@ -336,8 +335,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     manageTransitions('#quarto-margin-sidebar .nav-link', false);
     if (alternate) {
       enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
     } else {
       disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
     }
     manageTransitions('#quarto-margin-sidebar .nav-link', true);
     // Switch the toggles

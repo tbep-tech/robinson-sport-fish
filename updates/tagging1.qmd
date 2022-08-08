@@ -5,7 +5,7 @@ date: "04/27/2022"
 sidebar: false
 ---
 
-From April 25- April 27th, FWRI staff caught, identified, and measured 43 sport fish in Robinson Preserve. They implanted acoustic tags in 22 fishes, including four tags in Red Drum (Sciaenops ocellatus), five tags in Atlantic Tarpon (Megalops atlanticus), and 13 tags in Common Snook (Centropomus undecimalis).
+From April 25- April 27th, FWRI staff caught, identified, and measured 43 sport fish in Robinson Preserve. They implanted acoustic tags in 22 fishes, including four tags in Red Drum (*Sciaenops ocellatus*), five tags in Atlantic Tarpon (*Megalops atlanticus*), and 13 tags in Common Snook (*Centropomus undecimalis*).
 
 ![FWRI staff finishing acoustic tag implantation surgery on a juvenile Red Drum in Robinson Preserve.](/images/tagging1.jpg)
 
