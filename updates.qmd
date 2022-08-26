@@ -16,16 +16,16 @@ timeItems <- data.frame(id = character(),
                         start = character(),
                         end = character()) %>%
   add_row(id = "receivers", 
-          content = '<a href ="robinson-sport-fish/updates/receivers.html">Receivers Deployed</a>', 
+          content = '<a href ="/robinson-sport-fish/updates/receivers.html">Receivers Deployed</a>', 
           start = "2022-04-18") %>%
   add_row(id = "website", 
-          content = '<a href ="robinson-sport-fish/updates/first.html">Website Deployed</a>', 
+          content = '<a href ="/robinson-sport-fish/updates/first.html">Website Deployed</a>', 
           start = "2022-06-16") %>%
   add_row(id = "start", 
           content = "Project start; planning and purchasing begins", 
           start = "2021-10-01") %>%
   add_row(id = "tag1", 
-          content = '<a href ="robinson-sport-fish/updates/tagging1.html">22 fish tagged</a>', 
+          content = '<a href ="/robinson-sport-fish/updates/tagging1.html">22 fish tagged</a>', 
           start = "2022-04-27") %>%
   add_row(id = "download1",
           content = "First data download",
