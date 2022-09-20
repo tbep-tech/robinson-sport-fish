@@ -2,6 +2,7 @@
   {
     "listing": "/updates.html",
     "items": [
+      "/updates/download1.html",
       "/updates/tagging1.html",
       "/updates/receivers.html",
       "/updates/first.html"

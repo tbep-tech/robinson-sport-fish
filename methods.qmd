@@ -2,24 +2,13 @@
 title: Our Methods in Robinson Preserve
 ---
 
-A total of 7 acoustic receivers were placed in various
-waterbodies within Robinson Preserve; another 6 receivers were placed outside
-the preserve, generally targeting known and suspected egress points. At each of
-these 13 receivers, water loggers were also installed to track water
-temperature and salinity in near real-time. The data are stored within the water
-loggers and acoustic receivers until the data are downloaded, approximately
-every 3 to 4 months.
+A total of 7 acoustic receivers were placed in various waterbodies within Robinson Preserve; another 6 receivers were placed outside the preserve, generally targeting known and suspected egress points. At each of these 13 receivers, water loggers were also installed to track water temperature and salinity in near real-time. The data are stored within the water loggers and acoustic receivers until the data are downloaded, approximately every 3 to 4 months.
 
-In spring (April/May) and fall (Oct/Nov) of 2022 and 2023, we
-will implant sport fish with acoustic tags. The goal is to tag up to 40 fish in
-2022 and another 40 in 2023. These tags can last up to two years, so we will be
-listening for these fish through 2024. While monitoring these fishes, we will
-look for the number of 'pings' within the various waterbodies to see how fish
-are using the different waterbodies and nursery habitats, as well as 'pings'
-outside the preserve, which indicates functionality of the nursery habitats as fish
-have emigrated from the nursery habitat to the adult habitats in Tampa Bay and nearby
-waters.
+![An acoustic tag to be \
+implanted in a fish.](images/AcousticTag_cropped.jpg.png){style="float: right; padding: 10px" width="156"}
 
+In spring (April/May) and fall (Oct/Nov) of 2022 and 2023, we will implant sport fish with acoustic tags. The goal is to tag up to 40 fish in 2022 and another 40 in 2023. These tags can last up to two years, so we will be listening for these fish through 2024. While monitoring these fishes, we will look for the number of 'pings' within the various waterbodies to see how fish are using the different waterbodies and nursery habitats, as well as 'pings' outside the preserve, which indicates functionality of the nursery habitats as fish have emigrated from the nursery habitat to the adult habitats in Tampa Bay and nearby waters.
 
+Fishes sampled for tagging will be directly targeted and caught using a 9.1-m seine net. The net is deployed in a circular pattern to capture groups of sportfish in areas where they are observed or expected. This direct targeting of sportfish reduces the incidence of bycatch and maximizes the probability of catching appropriately-sized sport fish.
 
-
+![A 9.1-m center bag seine used to encircle and capture targeted groups of sport fish.](images/Seine_9.1m.jpg){width="750"}

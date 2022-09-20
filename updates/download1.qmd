@@ -1,0 +1,10 @@
+---
+title: "First Data Download"
+author: "Jon Peake"
+date: "09/20/2022"
+sidebar: false
+---
+
+On August 23-24, FWRI staff recovered data from 11 acoustic receivers and 4 water loggers within and adjacent to Robinson Preserve. Our acoustic receivers revealed over 300,000 detections, including detections from all 22 fish that were tagged in April 2022. Preliminary analyses showed that several of our tagged fish potentially exited the preserve at some point during the four months since the initial tagging occurred.
+
+![](images/paste-4CA43DDD.png)

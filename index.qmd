@@ -198,7 +198,7 @@ Data Downloads
 ### `r icon_style(fontawesome("fish-fins", style = "solid"), fill = "white", scale = 4)`
 
 <font size="+3">44</font>\
-Fish Identified
+Fishes Identified
 
 ### `r icon_style(fontawesome("tag", style = "solid"), fill = "white", scale = 4)`
 

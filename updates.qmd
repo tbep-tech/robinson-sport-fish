@@ -28,8 +28,15 @@ timeItems <- data.frame(id = character(),
           content = '<a href ="/robinson-sport-fish/updates/tagging1.html">22 fish tagged</a>', 
           start = "2022-04-27") %>%
   add_row(id = "download1",
-          content = "First data download",
-          start = "2022-08-24")
+          content = '<a href ="/robinson-sport-fish/updates/download1.html">First data download</a>',
+          start = "2022-08-24") %>%
+  add_row(id = "talk1",
+          content = "Virtual Outreach Event",
+          start = "2022-09-15") %>%
+  add_row(id = "talk2",
+          content = "In-Person Outreach Event<br>
+                     Robinson Preserve, 9am-11am",
+          start = "2022-11-12")
 
 tv <- timevis(timeItems,fit = TRUE)
 
