@@ -31,7 +31,7 @@ timeItems <- data.frame(id = character(),
           content = '<a href ="/robinson-sport-fish/updates/download1.html">First data download</a>',
           start = "2022-08-24") %>%
   add_row(id = "talk1",
-          content = "Virtual Outreach Event",
+          content = '<a href = "https://www.youtube.com/watch?v=H_kvWPZzJ7Y">Virtual Outreach Event</a>',
           start = "2022-09-15") %>%
   add_row(id = "talk2",
           content = "In-Person Outreach Event<br>
