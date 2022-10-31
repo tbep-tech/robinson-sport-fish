@@ -2,19 +2,6 @@
 title: "Importance of Tagging"
 ---
 
-Studying animal movement is important for researchers
-because it gives us insight into the habitats animals use for different
-purposes, which can help determine their biological requirements and the
-ecological factors that contribute to their persistence. Unfortunately, visual
-observation of animals in aquatic environments can be quite difficult,
-especially for extended periods of time. Acoustic telemetry is a tool used by
-researchers to monitor the movements of animals in aquatic environments, often over
-vast areas for several years. Acoustic telemetry gives researchers a window
-into an otherwise unknown world. It allows researchers to observe individual
-fish as they move through their environment and use habitats throughout their
-life cycle, which can help resource managers make management decisions and
-implement science-based conservation initiatives.
+Studying animal movement is important for researchers because it gives us insight into the habitats animals use for different purposes, which can help determine their biological requirements and the ecological factors that contribute to their persistence. Unfortunately, visual observation of animals in aquatic environments can be quite difficult, especially for extended periods of time. Acoustic telemetry is a tool used by researchers to monitor the movements of animals in aquatic environments, often over vast areas for several years. Acoustic telemetry gives researchers a window into an otherwise unknown world. It allows researchers to observe individual fish as they move through their environment and use habitats throughout their life cycle, which can help resource managers make management decisions and implement science-based conservation initiatives.
 
 ![FWRI staff finishing acoustic tag implantation surgery on a juvenile Red Drum in Robinson Preserve.](/images/tagging1.jpg){width="1350"}
-
-
