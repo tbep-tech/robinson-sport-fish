@@ -1,16 +1,25 @@
 ---
-title: "Data"
+title: "Interactive Data Map"
 sidebar: false
 ---
 
+Receiver array data were last downloaded August 2022. Our receivers have heard from all tagged fish, and most recently heard from 14 out of 22 tagged individuals. 11 fish have been detected by receivers placed outside of the preserve. Click on a specific receiver in the map below to see the species the receiver has detected. Clicking each waterbody will show where tagged fish were initially caught and released.
+
 ```{r}
 #| echo: false
+#| warning: false
+#| error: false
 #| message: false
 
 library(tidyverse)
 library(sf)
 library(mapview)
 library(leafpop)
+library(lubridate)
+library(odbc)
+library(DBI)
+library(dbplyr)
+library(ggimage)
 
 #### Prep spatial data layers ####
 
@@ -35,9 +44,10 @@ expansiondat <- st_read('shapefiles/RobPres_Expansion_Poly.shp', quiet = T) %>%
 
 #read in FIM pond outlines
 ponddat <- st_read('shapefiles/Robinson_Preserve.shp', quiet = T) %>%
-  mutate(Pond = str_sub(FolderPath, 24, 29)) %>%
-  mutate(Type = case_when(Pond %in% c("Pond_6", "Pond_7") ~ "Natural",
+  mutate(Pond = str_replace(str_sub(FolderPath, 24, 29),"_"," "),
+         Type = case_when(Pond %in% c("Pond_6", "Pond_7") ~ "Natural",
                           TRUE ~ "Restored")) %>%
+
   #group by ponds and make them into polygon outlines
   group_by(Pond, Type) %>%
   summarise() %>%
@@ -67,28 +77,100 @@ opening.shp <- openingdat %>%
   st_as_sf(coords = c('LONG_DD', 'LAT_DD'), crs = 4326)
 
 #### Prep data visualizations ####
-water_dat <- data.frame(x = 1, y = 1)
-receiver_dat <- data.frame(x = 1, y = 1)
+water_dat <- data.frame(x = c(1,2), y = c(1,2))
 
-water_log <- ggplot(water_dat, aes(x, y)) +
-  geom_line()
-receiver_log <- ggplot(receiver_dat, aes(x, y)) +
-  geom_line()
+load("../params.RData")
+conn <- dbConnect(odbc::odbc(),
+                  driver = driver,
+                  server = server,
+                  database = database,
+                  uid = uid,
+                  pwd = pwd)
+
+tags <- left_join(tbl(conn, in_schema("dbo","tbl_TagDetails")),
+                  tbl(conn, in_schema("dbo","tbl_Ref_TagNo")),
+                  by = c("TagNo","TagType","TagCode")) %>%
+        left_join(select(tbl(conn, in_schema("dbo","tbl_FieldBiology")),Reference,SpeciesRecID,TSNCode),
+                  by = c("Reference","SpeciesRecID")) %>%
+        left_join(select(tbl(conn, in_schema("dbo","tbl_Species")),TSN,Scientificname,CommonName),
+                  by = c("TSNCode" = "TSN")) %>%
+        filter(TagType == "A") %>%
+        collect()
+
+acoustic <- NULL
+files    <- list.files("../Acoustic_Raw", full.names = TRUE)
+
+for (i in files) {
+  acoustic <- rbind(acoustic, read_csv(i))
+}
+
+
+tagged <- acoustic %>%
+  mutate(TagCode = str_sub(Transmitter,start = -4L)) %>%
+  left_join(tags, by = "TagCode") %>%
+  filter(TagCode %in% unique(tags$TagCode)) %>%
+  mutate(date_time = as_datetime(`Date and Time (UTC)`),
+         station = ifelse(is.na(`Station Name`),"Palma Sola 2",`Station Name`),
+         Receiver_Number = as.numeric(str_sub(Receiver,start = -6L)),
+         location = ifelse(station %in% c("Mead Point 1", "Mead Point 2", "Mead Point 3", "Perico Bayou","Palma Sola 1", "Palma Sola 2"), "Outside","Inside")) %>%
+  arrange(CommonName) %>%
+  mutate(TagCode = factor(TagCode, levels = unique(TagCode)))
+
+tagged_plot <- ggplot(tagged) +
+  geom_point(aes(x = date_time, y = TagCode, color = CommonName, shape = location)) +
+  scale_shape_manual(values = c(1,19),breaks = c("Outside","Inside")) +
+  scale_color_manual(values = c("cadetblue4","coral3","darkgoldenrod1"), breaks = c("Tarpon","Red Drum", "Common Snook")) +
+  labs(x = NULL, y = "Fish ID",color = NULL,shape = "Location") +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
+# tagged_plot
+
+
+receivers_dat <- full_join(receiver.shp,tagged, by = c("Receiver_Number")) %>%
+  group_by(Receiver_Number) %>%
+  nest() %>%
+  mutate(plot     = map(data, function(x) if(all(is.na(x$date_time))) ggplot() else {
+           ggplot(x,aes(x = date_time, y = TagCode, color = CommonName)) + 
+             geom_point() +
+             scale_color_manual(values = c("cadetblue4","coral3","darkgoldenrod1"), breaks = c("Tarpon","Red Drum", "Common Snook")) +
+             labs(x = NULL, y = "Fish ID",color = NULL) +
+             theme(legend.position = "top")
+         }))
+
+receiver_plots <- ggplot() +
+  geom_text(aes(0,0,label = "Coming soon")) +
+  theme_void()
+
+pond_charts <- ggplot() +
+  geom_text(aes(0,0,label = "Coming soon")) +
+  theme_void()
+
+
+water_log <- ggplot() +
+  geom_text(aes(0,0,label = "Coming soon")) +
+  theme_void()
+# receiver_log <- ggplot(receiver_dat, aes(x, y)) +
+#   geom_line()
 
 mapviewOptions(basemaps = c("Esri.WorldImagery", "OpenStreetMap"),
                legend.pos = "topright")
 mapview(preservedat, 
         col.regions = "lightgreen", 
         alpha.regions = 0.2, 
-        layer.name = "Robinson Preserve") +
+        layer.name = "Robinson Preserve",
+        popup = NULL,
+        label = FALSE) +
   mapview(ponddat, 
           col.regions = "lightblue", 
-          layer.name = "Waterbodies") +
+          layer.name = "Waterbodies",
+          label = ponddat$Pond,
+          popup = popupGraph(pond_charts)) +
   mapview(opening.shp, 
           zcol = "Type", 
           col.regions = c("Red", "Black"),
           alpha.regions = 10, 
           cex = 5, 
+          popup = NULL,
+          label = FALSE,
           layer.name = "Potential Exit/Entry Points") +
   mapview(logger.shp, 
           col.regions = "blue", 
@@ -100,5 +182,6 @@ mapview(preservedat,
           cex = 8, 
           alpha.regions = 10, 
           layer.name = "Receiver Locations",
-          popup = popupGraph(receiver_log))
+          label = receiver.shp$Area_Name,
+          popup = popupGraph(receiver_plots))
 ```

@@ -1,17 +1,13 @@
 ---
+title: Robinson Preserve Sportfish Tagging Project
 toc: false
 sidebar: false
 format:
   html:
     css: styles_splash.css
     anchor-sections: false
+    title-block-banner: images/robinson3.jpeg
 ---
-
-::: column-screen
-[![](images/robinson.jpeg){style="margin: 0; padding-top: 0px" width="1920"}](https://www.flickr.com/photos/floridahikes/6472252333/in/album-72157628320834221/)
-:::
-
-# Robinson Preserve Sport Fish Tagging Project
 
 ## Tracking juvenile sport fish movement from a habitat restoration site to fished populations of Tampa Bay
 
@@ -19,7 +15,7 @@ Many commercially and recreationally important fishes use estuarine habitats as 
 
 ```{r}
 #| echo: false
-#| message: false
+#| warning: false
 library(tidyverse)
 library(sf)
 library(mapview)
