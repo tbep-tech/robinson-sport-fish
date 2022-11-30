@@ -1,5 +1,10 @@
 /* css styles */
-
+#title-block-header {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: -1px;
+  height: 500px;
+}
 .title {
   font-size: 350%;
 }
