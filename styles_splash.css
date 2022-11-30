@@ -13,6 +13,11 @@
   height: 140%;
 }
 
+.quarto-title {
+  position: absolute;
+  top: 35%;
+}
+
 .title {
   font-size: 350%;
 }
