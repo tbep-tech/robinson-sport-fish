@@ -3,7 +3,7 @@ title: "Interactive Data Map"
 sidebar: false
 ---
 
-Receiver array data were last downloaded August 2022. Our receivers have heard from all tagged fish, and most recently heard from 14 out of 22 tagged individuals. 11 fish have been detected by receivers placed outside of the preserve. Click on a specific receiver in the map below to see the species the receiver has detected. Click each waterbody to show where tagged fish were initially caught and released.
+Receiver array data were last downloaded December 2022. Our receivers have heard from all tagged fish, and most recently heard from 15 out of 26 tagged individuals. 11 fish have been detected by receivers placed outside of the preserve. 4 fish were last detected by receivers outside of the preserve. Click on a specific receiver in the map below to see the species the receiver has detected. Click each waterbody to show where tagged fish were initially caught and released.
 
 ```{r}
 #| echo: false
@@ -110,7 +110,8 @@ tagged <- acoustic %>%
   left_join(tags, by = "TagCode") %>%
   filter(TagCode %in% unique(tags$TagCode)) %>%
   mutate(date_time = as_date(`Date and Time (UTC)`),
-         station = ifelse(is.na(`Station Name`),"Palma Sola 2",`Station Name`),
+         station = ifelse(is.na(`Station Name`) | `Station Name` == "palm sola 2","Palma Sola 2",`Station Name`),
+         station = ifelse(station == "palma sola #1","Palma Sola 1", station),
          Receiver_Number = as.numeric(str_sub(Receiver,start = -6L)),
          location = ifelse(station %in% c("Mead Point 1", "Mead Point 2", "Mead Point 3", "Perico Bayou","Palma Sola 1", "Palma Sola 2"), "Outside","Inside")) %>%
   arrange(CommonName) %>%

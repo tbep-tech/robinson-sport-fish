@@ -166,17 +166,17 @@ Receivers Placed
 
 ### `r icon_style(fontawesome("download", style = "solid"), scale = 4, 'text-align'="center")`
 
-<font size="+3">1</font>\
+<font size="+3">2</font>\
 Data Downloads
 
 ### `r icon_style(fontawesome("fish-fins", style = "solid"), scale = 4)`
 
-<font size="+3">44</font>\
-Fish Identified
+<font size="+3">48</font>\
+Fishes Identified
 
 ### `r icon_style(fontawesome("tag", style = "solid"), scale = 4)`
 
-<font size="+3">22</font>\
+<font size="+3">26</font>\
 Fish Tagged
 :::
 
@@ -188,16 +188,16 @@ Receivers Placed
 
 ### `r icon_style(fontawesome("download", style = "solid"), fill = "white", scale = 4, 'text-align'="center")`
 
-<font size="+3">1</font>\
+<font size="+3">2</font>\
 Data Downloads
 
 ### `r icon_style(fontawesome("fish-fins", style = "solid"), fill = "white", scale = 4)`
 
-<font size="+3">44</font>\
+<font size="+3">48</font>\
 Fishes Identified
 
 ### `r icon_style(fontawesome("tag", style = "solid"), fill = "white", scale = 4)`
 
-<font size="+3">22</font>\
+<font size="+3">26</font>\
 Fish Tagged
 :::
