@@ -109,10 +109,11 @@ tagged <- acoustic %>%
   mutate(TagCode = str_sub(Transmitter,start = -4L)) %>%
   left_join(tags, by = "TagCode") %>%
   filter(TagCode %in% unique(tags$TagCode)) %>%
-  mutate(date_time = as_date(`Date and Time (UTC)`),
-         station = ifelse(is.na(`Station Name`) | `Station Name` == "palm sola 2","Palma Sola 2",`Station Name`),
-         station = ifelse(station == "palma sola #1","Palma Sola 1", station),
-         Receiver_Number = as.numeric(str_sub(Receiver,start = -6L)),
+  mutate(Receiver_Number = as.numeric(str_sub(Receiver,start = -6L)),
+         date_time = as_date(`Date and Time (UTC)`),
+         station = ifelse(Receiver_Number == '138109',"Palma Sola 2",`Station Name`),
+         station = ifelse(Receiver_Number == '138101',"Palma Sola 1", station),
+         
          location = ifelse(station %in% c("Mead Point 1", "Mead Point 2", "Mead Point 3", "Perico Bayou","Palma Sola 1", "Palma Sola 2"), "Outside","Inside")) %>%
   arrange(CommonName) %>%
   mutate(TagCode = factor(TagCode, levels = unique(TagCode)))
@@ -166,15 +167,42 @@ receivers_dat <- full_join(receiver.shp,tagged, by = c("Receiver_Number")) %>%
 
 receiver_plots <- receivers_dat$plot
 
-
+pond_tags <- tags %>%
+  mutate(Pond = str_sub(Notes, start = 1L, end = 6L)) %>%
+  select(Pond,CommonName) %>%
+  full_join(ponddat) %>%
+  group_by(Pond,CommonName) %>%
+  summarize(Count = n()) %>%
+  nest() %>%
+  mutate(plot = map(data, function(dat) if(all(is.na(dat$CommonName))) {
+           ggplot() +
+             geom_text(aes(0,0,label = "No Fish Tagged")) +
+             theme_void()
+         } else {
+           ggplot(dat) +
+             geom_image(aes(x = 0, 
+                            y = 1:nrow(dat), 
+                            image = filter(fish_images, species %in% dat$CommonName)$img),
+                        size = 0.5) +
+             geom_text(aes(x = 0, 
+                           y = 1:nrow(dat)-0.3, 
+                           label = CommonName), 
+                       size = 6) +
+             geom_text(aes(x = 0, 
+                           y = 1:nrow(dat)-.5, 
+                           label = paste0(Count, " fish tagged")),
+                       size = 6) +
+             scale_y_continuous(limits = c(.25,nrow(dat)+0.25)) +
+             scale_x_continuous(limits = c(-1,1)) +
+             theme_void()
+         }))
+  
 
 # receiver_plots <- ggplot() +
 #   geom_text(aes(0,0,label = "Coming soon")) +
 #   theme_void()
 
-pond_charts <- ggplot() +
-  geom_text(aes(0,0,label = "Coming soon")) +
-  theme_void()
+pond_charts <- pond_tags$plot
 
 
 water_log <- ggplot() +

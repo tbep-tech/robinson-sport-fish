@@ -8,6 +8,7 @@ sidebar: false
 ```{r}
 #| echo: false
 #| message: false
+#| warning: false
 library(timevis)
 library(dplyr)
 
@@ -36,7 +37,13 @@ timeItems <- data.frame(id = character(),
   add_row(id = "talk2",
           content = "In-Person Outreach Event<br>
                      Robinson Preserve, 9am-11am",
-          start = "2022-11-12")
+          start = "2022-11-12") %>%
+  add_row(id = "tag2",
+          content = '<a href ="/robinson-sport-fish/updates/tagging2.html">4 fish tagged</a>',
+          start = "2022-11-17") %>%
+  add_row(id = "download2",
+          content = '<a href ="/robinson-sport-fish/updates/download2.html">Second data download</a>',
+          start = "2022-12-05")
 
 tv <- timevis(timeItems,fit = TRUE)
 

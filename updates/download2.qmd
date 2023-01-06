@@ -1,10 +1,16 @@
 ---
-title: "First Data Download"
+title: "Second Data Download"
 author: "Jon Peake"
-date: "09/20/2022"
+date: "12/05/2022"
 sidebar: false
 ---
 
-On August 23-24, FWRI staff recovered data from 11 acoustic receivers and 4 water loggers within and adjacent to Robinson Preserve. Our acoustic receivers revealed over 300,000 detections, including detections from all 22 fish that were tagged in April 2022. Preliminary analyses showed that several of our tagged fish potentially exited the preserve at some point during the four months since the initial tagging occurred.
+On December 5th, FWRI staff recovered data from 11 acoustic receivers and 4 water loggers within and adjacent to Robinson Preserve. Our acoustic receivers revealed almost an additional 300,000 detections, including detections from 18 of the 26 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside of the preserve.
 
-![](images/paste-4CA43DDD.png)
+Staff also deployed 2 additional acoustic receivers to replace receiver arrays that were unrecoverable.
+
+![Researchers use jon boats to download receiver data and deploy new receivers.](images/JonBoat_with_SamplingGear.jpg)
+
+![Receiver arrays were deployed in camouflaged housings. These housings protect the receiver from impact and discourage tampering.](images/Preparing%20to%20deply%20hydrophone%20and%20water%20logger.jpg)
+
+![Receiver arrays are great potential habitat for mussels, barnacles, and other encrusting invertebrates. Staff often need to clean off these settlers to access the receiver for download.](images/P1010689.JPG)
