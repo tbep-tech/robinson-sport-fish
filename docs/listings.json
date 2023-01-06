@@ -2,12 +2,12 @@
   {
     "listing": "/updates.html",
     "items": [
-      "/updates/download1.html",
-      "/updates/tagging1.html",
-      "/updates/tagging2.html",
-      "/updates/receivers.html",
       "/updates/download2.html",
-      "/updates/first.html"
+      "/updates/tagging2.html",
+      "/updates/download1.html",
+      "/updates/first.html",
+      "/updates/tagging1.html",
+      "/updates/receivers.html"
     ]
   }
 ]

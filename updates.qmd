@@ -2,6 +2,7 @@
 title: "Project Updates"
 listing:
   contents: updates
+  sort: 'date desc'
 sidebar: false
 ---
 
