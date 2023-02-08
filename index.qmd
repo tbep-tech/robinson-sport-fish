@@ -11,7 +11,7 @@ format:
 
 ## Tracking juvenile sport fish movement from a habitat restoration site to fished populations of Tampa Bay
 
-Many commercially and recreationally important fishes use estuarine habitats as juvenile nursery grounds. However, many of these habitats are threatened by a number of stressors, including rising sea levels and increasing urbanization. Restoration and preservation of affected juvenile habitats can help support adult populations.
+Many commercially and recreationally important fishes use estuarine habitats as juvenile nursery grounds. However, many of these habitats are threatened by a number of stressors, including rising sea levels and increasing urbanization. Restoration and preservation of affected juvenile habitats can help support adult populations. To see our team in action and get a taste for the project, check out [this Youtube Short reel](https://youtube.com/shorts/2IWgYjh7rh8?feature=share) featuring FWRI staff.
 
 ```{r}
 #| echo: false
