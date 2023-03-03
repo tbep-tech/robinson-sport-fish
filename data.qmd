@@ -3,7 +3,7 @@ title: "Interactive Data Map"
 sidebar: false
 ---
 
-Receiver array data were last downloaded December 2022. Our receivers have heard from all tagged fish, and most recently heard from 15 out of 26 tagged individuals. 11 fish have been detected by receivers placed outside of the preserve. 4 fish were last detected by receivers outside of the preserve. Click on a specific receiver in the map below to see the species the receiver has detected. Click each waterbody to show where tagged fish were initially caught and released.
+Receiver array data were last downloaded February 2023. Our receivers have heard from all tagged fish, and most recently heard from 15 out of 27 tagged individuals. 12 fish have been detected by receivers placed outside of the preserve. 6 fish were last detected by receivers outside of the preserve. Click on a specific receiver in the map below to see the species the receiver has detected. Click each waterbody to show where tagged fish were initially caught and released.
 
 ```{r}
 #| echo: false
@@ -15,7 +15,6 @@ library(tidyverse)
 library(sf)
 library(mapview)
 library(leafpop)
-library(lubridate)
 library(odbc)
 library(DBI)
 library(dbplyr)
@@ -97,12 +96,7 @@ tags <- left_join(tbl(conn, in_schema("dbo","tbl_TagDetails")),
         filter(TagType == "A") %>%
         collect()
 
-acoustic <- NULL
-files    <- list.files("../Acoustic_Raw", full.names = TRUE)
-
-for (i in files) {
-  acoustic <- rbind(acoustic, read_csv(i))
-}
+acoustic <- read_csv("../AllAcoustic.csv")
 
 
 tagged <- acoustic %>%
