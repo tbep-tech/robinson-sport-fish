@@ -48,19 +48,19 @@ timeItems <- data.frame(id = character(),
   add_row(id = "youtube",
           content = '<a href ="https://youtube.com/shorts/2IWgYjh7rh8?feature=share">Youtube Short published</a>',
           start = "2023-02-07") %>%
-  add_row(id = "download2",
-          content = '<a href ="/robinson-sport-fish/updates/download3.html">Third data download</a>',
-          start = "2023-02-22")
+  add_row(id = "download3",
+         content = '<a href ="/robinson-sport-fish/updates/download3.html">Third data download</a>',
+         start = "2023-02-22")
 
 tv <- timevis(timeItems,fit = TRUE)
 
-style <- "
-  /* alternating column backgrounds */
-  .vis-time-axis {
-    background: white;
-  }
-"
-
+ style <- "
+   /* alternating column backgrounds */
+   .vis-time-axis {
+     background: white;
+   }
+ "
+ 
 tv <- htmltools::tagList(htmltools::tags$style(style), tv)
 tv
 
