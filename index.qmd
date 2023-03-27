@@ -166,7 +166,7 @@ Receivers Placed
 
 ### `r icon_style(fontawesome("download", style = "solid"), scale = 4, 'text-align'="center")`
 
-<font size="+3">2</font>\
+<font size="+3">3</font>\
 Data Downloads
 
 ### `r icon_style(fontawesome("fish-fins", style = "solid"), scale = 4)`
@@ -188,7 +188,7 @@ Receivers Placed
 
 ### `r icon_style(fontawesome("download", style = "solid"), fill = "white", scale = 4, 'text-align'="center")`
 
-<font size="+3">2</font>\
+<font size="+3">3</font>\
 Data Downloads
 
 ### `r icon_style(fontawesome("fish-fins", style = "solid"), fill = "white", scale = 4)`
