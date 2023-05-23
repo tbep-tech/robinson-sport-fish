@@ -208,7 +208,16 @@ water_log <- ggplot() +
 # receiver_log <- ggplot(receiver_dat, aes(x, y)) +
 #   geom_line()
 
-mapviewOptions(basemaps = c("Esri.WorldImagery", "OpenStreetMap"),
+
+```
+
+::: light-mode
+```{r}
+#| echo: false
+#| warning: false
+#| error: false
+#| message: false
+mapviewOptions(basemaps = c("OpenStreetMap","Esri.WorldImagery"),
                legend.pos = "topright")
 mapview(preservedat, 
         col.regions = "lightgreen", 
@@ -243,3 +252,46 @@ mapview(preservedat,
           layer.name = "Water/Air Loggers", 
           popup = popupGraph(water_log))
 ```
+:::
+
+::: dark-mode
+```{r}
+#| echo: false
+#| warning: false
+#| error: false
+#| message: false
+mapviewOptions(basemaps = c("OpenStreetMap","Esri.WorldImagery"),              legend.pos = "topright")
+mapview(preservedat,
+        col.regions = "lightgreen", 
+        alpha.regions = 0.2, 
+        layer.name = "Robinson Preserve",
+        popup = NULL,
+        label = FALSE) +
+  mapview(ponddat, 
+          col.regions = "lightblue", 
+          layer.name = "Waterbodies",
+          label = ponddat$Pond,
+          popup = popupGraph(pond_charts)) +
+  mapview(receiver.shp, 
+          zcol = 'Status',
+          col.regions = c('yellow','gray'), 
+          cex = 8, 
+          alpha.regions = 10, 
+          layer.name = "Receiver Locations",
+          label = receiver.shp$Area_Name,
+          popup = popupGraph(receiver_plots)) +
+  mapview(opening.shp, 
+          zcol = "Type", 
+          col.regions = c("Red", "Black"),
+          alpha.regions = 10, 
+          cex = 5, 
+          popup = NULL,
+          label = FALSE,
+          layer.name = "Potential Exit/Entry Points") +
+  mapview(logger.shp, 
+          col.regions = "blue", 
+          cex = 4.5, 
+          layer.name = "Water/Air Loggers", 
+          popup = popupGraph(water_log))
+```
+:::
