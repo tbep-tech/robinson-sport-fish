@@ -105,19 +105,20 @@ tagged <- acoustic %>%
   filter(TagCode %in% unique(tags$TagCode)) %>%
   mutate(Receiver_Number = as.numeric(str_sub(Receiver,start = -6L)),
          date_time = as_date(`Date and Time (UTC)`),
-         station = ifelse(Receiver_Number == '138109',"Palma Sola 2",`Station Name`),
-         station = ifelse(Receiver_Number == '138101',"Palma Sola 1", station),
-         
-         location = ifelse(station %in% c("Mead Point 1", "Mead Point 2", "Mead Point 3", "Perico Bayou","Palma Sola 1", "Palma Sola 2"), "Outside","Inside")) %>%
+         station = case_when(Receiver_Number == '138847'~"Mead Point 4",
+                             Receiver_Number == '138109'~"Palma Sola 2",
+                             Receiver_Number == '138101'~"Palma Sola 1",
+                             .default = `Station Name`),
+         location = ifelse(station %in% c("Mead Point 2", "Mead Point 4", "Perico Bayou","Palma Sola 1", "Palma Sola 2"), "Outside","Inside")) %>%
   arrange(CommonName) %>%
   mutate(TagCode = factor(TagCode, levels = unique(TagCode)))
 
-tagged_plot <- ggplot(tagged) +
-  geom_point(aes(x = date_time, y = TagCode, color = CommonName, shape = location)) +
-  scale_shape_manual(values = c(1,19),breaks = c("Outside","Inside")) +
-  scale_color_manual(values = c("cadetblue4","coral3","darkgoldenrod1", 'gray40'), breaks = c("Tarpon","Red Drum", "Common Snook", 'Black Drum')) +
-  labs(x = NULL, y = "Fish ID",color = NULL,shape = "Location") +
-  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
+#tagged_plot <- ggplot(tagged) +
+#  geom_point(aes(x = date_time, y = TagCode, color = CommonName, shape = location)) +
+#  scale_shape_manual(values = c(1,19),breaks = c("Outside","Inside")) +
+#  scale_color_manual(values = c("cadetblue4","coral3","darkgoldenrod1", 'gray40'), breaks = c("Tarpon","Red Drum", "Common Snook", 'Black Drum')) +
+#   labs(x = NULL, y = "Fish ID",color = NULL,shape = "Location") +
+#   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
 # tagged_plot
 
 fish_images <- data.frame(species = c("Black Drum","Common Snook","Red Drum","Tarpon"),img = c("../FishImages/Black Drum.png","../FishImages/Snook.png","../FishImages/Red Drum.png","../FishImages/Tarpon.png"))
@@ -220,6 +221,14 @@ mapview(preservedat,
           layer.name = "Waterbodies",
           label = ponddat$Pond,
           popup = popupGraph(pond_charts)) +
+  mapview(receiver.shp, 
+          zcol = 'Status',
+          col.regions = c('yellow','gray'), 
+          cex = 8, 
+          alpha.regions = 10, 
+          layer.name = "Receiver Locations",
+          label = receiver.shp$Area_Name,
+          popup = popupGraph(receiver_plots)) +
   mapview(opening.shp, 
           zcol = "Type", 
           col.regions = c("Red", "Black"),
@@ -232,12 +241,5 @@ mapview(preservedat,
           col.regions = "blue", 
           cex = 4.5, 
           layer.name = "Water/Air Loggers", 
-          popup = popupGraph(water_log)) +
-  mapview(receiver.shp, 
-          col.regions = "yellow", 
-          cex = 8, 
-          alpha.regions = 10, 
-          layer.name = "Receiver Locations",
-          label = receiver.shp$Area_Name,
-          popup = popupGraph(receiver_plots))
+          popup = popupGraph(water_log))
 ```
