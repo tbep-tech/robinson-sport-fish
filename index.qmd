@@ -115,6 +115,8 @@ pointdat.shp <- pointdat %>%
   #specify lat/long and the WGS coord system as 4326
   st_as_sf(coords = c('LONG_DD', 'LAT_DD'), crs = 4326)
 
+custom_icons <- icon_set('images/icons')
+
 # pallette <- c("red", "black", "blue", "pink", "yellow")
 # shapes <- c(17, 17, 19, 13, 7)
 # 
@@ -158,46 +160,80 @@ pointdat.shp <- pointdat %>%
 
 The Robinson Preserve Sport Fish Tagging Project was initiated to determine the extent to which the habitat restoration at [Robinson Preserve](https://www.mymanatee.org/departments/parks___natural_resources/parks__preserves___beaches/robinson_preserve), a 682-acre area with a variety of restored fisheries nursery habitat, contributes juvenile sport fish to adult populations in the greater Tampa Bay area. The contribution of juveniles is a major information gap that exists for many habitat restoration projects, despite being a realistic metric for evaluating restoration success. With the help of [Manatee County Department of Parks and Natural Resources](https://www.mymanatee.org/departments/parks___natural_resources) and the [National Oceanic and Atmospheric Administration Office of Habitat Conservation](https://www.fisheries.noaa.gov/about/office-habitat-conservation), researchers at the [Florida Fish and Wildlife Research Institute](https://myfwc.com/research/) are seeking to fill this information gap by tagging and tracking the movement of juvenile sport fishes from and within Robinson Preserve.
 
-::: {.light-mode layout-ncol="4" style="text-align: center; justify-content: center; align-items: center;"}
+###  {style="color: white;"}
+
+::: {.light-mode style="text-align: center; justify-content: center; align-items: center;"}
+::: {.light-mode layout-ncol="3" style="text-align: center; justify-content: center; align-items: center;"}
 ### `r icon_style(fontawesome("tower-broadcast", style = "solid"), scale = 4)` {style="color: white;"}
 
-<font size="+3">13</font>\
+<font size="+3">12</font>\
 Receivers Placed
 
 ### `r icon_style(fontawesome("download", style = "solid"), scale = 4, 'text-align'="center")`
 
-<font size="+3">3</font>\
+<font size="+3">4</font>\
 Data Downloads
 
+### `r icon_style(custom_icons('fishing-net-svgrepo-com'), scale = 4)`
+
+<font size="+3">66</font>\
+Fish Caught
+:::
+
+::: {.light-mode layout-ncol="3" style="text-align: center; justify-content: center; align-items: center;"}
 ### `r icon_style(fontawesome("fish-fins", style = "solid"), scale = 4)`
 
-<font size="+3">48</font>\
-Fishes Identified
+<font size="+3">4</font>\
+Species Tagged
+
+### 
 
 ### `r icon_style(fontawesome("tag", style = "solid"), scale = 4)`
 
-<font size="+3">26</font>\
-Fish Tagged
+<font size="+3">44</font>\
+Tags Implanted
+
+### `r icon_style(fontawesome("location-crosshairs", style = "solid"), scale = 4)`
+
+<font size="+3">1.05m</font>\
+Detections
 :::
 
-::: {.dark-mode layout-ncol="4" style="text-align: center; justify-content: center; align-items: center;"}
+### 
+:::
+
+::: {.dark-mode style="text-align: center; justify-content: center; align-items: center;"}
+::: {.dark-mode layout-ncol="3" style="text-align: center; justify-content: center; align-items: center;"}
 ### `r icon_style(fontawesome("tower-broadcast", style = "solid"), fill = "white", scale = 4)`
 
-<font size="+3">13</font>\
+<font size="+3">12</font>\
 Receivers Placed
 
 ### `r icon_style(fontawesome("download", style = "solid"), fill = "white", scale = 4, 'text-align'="center")`
 
-<font size="+3">3</font>\
+<font size="+3">4</font>\
 Data Downloads
 
+### `r icon_style(custom_icons('fishing-net-svgrepo-com'), scale = 4, fill = 'white')`
+
+<font size="+3">66</font>\
+Fish Caught
+:::
+
+::: {.dark-mode layout-ncol="3" style="text-align: center; justify-content: center; align-items: center;"}
 ### `r icon_style(fontawesome("fish-fins", style = "solid"), fill = "white", scale = 4)`
 
-<font size="+3">48</font>\
-Fishes Identified
+<font size="+3">4</font>\
+Species Tagged
 
 ### `r icon_style(fontawesome("tag", style = "solid"), fill = "white", scale = 4)`
 
-<font size="+3">26</font>\
-Fish Tagged
+<font size="+3">44</font>\
+Tags Implanted
+
+### `r icon_style(fontawesome("location-crosshairs", style = "solid"), fill = "white", scale = 4)`
+
+<font size="+3">1.05 million</font>\
+Detections
+:::
 :::

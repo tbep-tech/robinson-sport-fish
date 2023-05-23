@@ -3,7 +3,7 @@ title: "Interactive Data Map"
 sidebar: false
 ---
 
-Receiver array data were last downloaded February 2023. Our receivers have heard from all tagged fish, and most recently heard from 15 out of 27 tagged individuals. 12 fish have been detected by receivers placed outside of the preserve. 6 fish were last detected by receivers outside of the preserve. Click on a specific receiver in the map below to see the species the receiver has detected. Click each waterbody to show where tagged fish were initially caught and released.
+Receiver array data were last downloaded May 2023. Our receivers have heard from 33 out of 44 tagged fish, and most recently heard from 18 tagged individuals. 13 fish have been detected by receivers placed outside of the preserve. 6 fish were last detected by receivers outside of the preserve. Click on a specific receiver in the map below to see the species the receiver has detected. Click each waterbody to show where tagged fish were initially caught and released.
 
 ```{r}
 #| echo: false
@@ -115,12 +115,12 @@ tagged <- acoustic %>%
 tagged_plot <- ggplot(tagged) +
   geom_point(aes(x = date_time, y = TagCode, color = CommonName, shape = location)) +
   scale_shape_manual(values = c(1,19),breaks = c("Outside","Inside")) +
-  scale_color_manual(values = c("cadetblue4","coral3","darkgoldenrod1"), breaks = c("Tarpon","Red Drum", "Common Snook")) +
+  scale_color_manual(values = c("cadetblue4","coral3","darkgoldenrod1", 'gray40'), breaks = c("Tarpon","Red Drum", "Common Snook", 'Black Drum')) +
   labs(x = NULL, y = "Fish ID",color = NULL,shape = "Location") +
   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
 # tagged_plot
 
-fish_images <- data.frame(species = c("Common Snook","Red Drum","Tarpon"),img = c("../FishImages/Snook.png","../FishImages/Red Drum.png","../FishImages/Tarpon.png"))
+fish_images <- data.frame(species = c("Black Drum","Common Snook","Red Drum","Tarpon"),img = c("../FishImages/Black Drum.png","../FishImages/Snook.png","../FishImages/Red Drum.png","../FishImages/Tarpon.png"))
 
 
 receivers_dat <- full_join(receiver.shp,tagged, by = c("Receiver_Number")) %>%
@@ -139,19 +139,20 @@ receivers_dat <- full_join(receiver.shp,tagged, by = c("Receiver_Number")) %>%
          } else {
            ggplot(dat) +
              geom_image(aes(x = 0, 
-                            y = 1:nrow(dat), 
+                            y = (1:nrow(dat)-1)*1.5 + 1, 
                             image = filter(fish_images, species %in% dat$CommonName)$img),
-                        size = 0.5) +
+                        size = 0.15, by = 'height') +
              geom_text(aes(x = 0, 
-                           y = 1:nrow(dat)-0.3, 
+                           y = (1:nrow(dat)-1)*1.5 + .6, 
                            label = CommonName), 
                        size = 6) +
              geom_text(aes(x = 0, 
-                           y = 1:nrow(dat)-.5, 
+                           y = (1:nrow(dat)-1)*1.5 + .4, 
                            label = paste0(n_detect, " daily detections from ",n_fish, " fish")),
                        size = 6) +
-             scale_y_continuous(limits = c(.25,nrow(dat)+0.25)) +
+             scale_y_continuous(expand = expansion(add = .5)) +
              scale_x_continuous(limits = c(-1,1)) +
+             scale_size_identity() +
              theme_void()
          }))
 
@@ -162,7 +163,7 @@ receivers_dat <- full_join(receiver.shp,tagged, by = c("Receiver_Number")) %>%
 receiver_plots <- receivers_dat$plot
 
 pond_tags <- tags %>%
-  mutate(Pond = str_sub(Notes, start = 1L, end = 6L)) %>%
+  mutate(Pond = str_match(Notes,'Pond..')[,1]) %>%
   select(Pond,CommonName) %>%
   full_join(ponddat) %>%
   group_by(Pond,CommonName) %>%
@@ -175,19 +176,20 @@ pond_tags <- tags %>%
          } else {
            ggplot(dat) +
              geom_image(aes(x = 0, 
-                            y = 1:nrow(dat), 
+                            y = (1:nrow(dat)-1)*1.5 + 1, 
                             image = filter(fish_images, species %in% dat$CommonName)$img),
-                        size = 0.5) +
+                        size = 0.15, by = 'height') +
              geom_text(aes(x = 0, 
-                           y = 1:nrow(dat)-0.3, 
+                           y = (1:nrow(dat)-1)*1.5 + .6, 
                            label = CommonName), 
                        size = 6) +
              geom_text(aes(x = 0, 
-                           y = 1:nrow(dat)-.5, 
+                           y = (1:nrow(dat)-1)*1.5 + .4,
                            label = paste0(Count, " fish tagged")),
                        size = 6) +
-             scale_y_continuous(limits = c(.25,nrow(dat)+0.25)) +
+             scale_y_continuous(expand = expansion(add = .5)) +
              scale_x_continuous(limits = c(-1,1)) +
+             scale_size_identity() +
              theme_void()
          }))
   

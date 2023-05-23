@@ -50,7 +50,13 @@ timeItems <- data.frame(id = character(),
           start = "2023-02-07") %>%
   add_row(id = "download3",
          content = '<a href ="/robinson-sport-fish/updates/download3.html">Third data download</a>',
-         start = "2023-02-22")
+         start = "2023-02-22") %>%
+  add_row(id = "tag3",
+         content = '<a href ="/robinson-sport-fish/updates/tagging3.html">15 fish tagged</a>',
+         start = "2023-03-28") %>%
+  add_row(id = "download4",
+         content = '<a href ="/robinson-sport-fish/updates/download4.html">Fourth data download</a>',
+         start = "2023-05-18")
 
 tv <- timevis(timeItems,fit = TRUE)
 
