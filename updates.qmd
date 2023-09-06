@@ -49,14 +49,20 @@ timeItems <- data.frame(id = character(),
           content = '<a href ="https://youtube.com/shorts/2IWgYjh7rh8?feature=share">Youtube Short published</a>',
           start = "2023-02-07") %>%
   add_row(id = "download3",
-         content = '<a href ="/robinson-sport-fish/updates/download3.html">Third data download</a>',
-         start = "2023-02-22") %>%
+          content = '<a href ="/robinson-sport-fish/updates/download3.html">Third data download</a>',
+          start = "2023-02-22") %>%
   add_row(id = "tag3",
-         content = '<a href ="/robinson-sport-fish/updates/tagging3.html">15 fish tagged</a>',
-         start = "2023-03-28") %>%
+          content = '<a href ="/robinson-sport-fish/updates/tagging3.html">15 fish tagged</a>',
+          start = "2023-03-28") %>%
   add_row(id = "download4",
-         content = '<a href ="/robinson-sport-fish/updates/download4.html">Fourth data download</a>',
-         start = "2023-05-18")
+          content = '<a href ="/robinson-sport-fish/updates/download4.html">Fourth data download</a>',
+          start = "2023-05-18") %>%
+  add_row(id = 'tag4',
+          content = '<a href ="/robinson-sport-fish/updates/tagging4.html">9 fish tagged</a>',
+          start = "2023-06-29") %>%
+  add_row(id = "download5",
+          content = '<a href ="/robinson-sport-fish/updates/download5.html">Fifth data download</a>',
+          start = "2023-08-15")
 
 tv <- timevis(timeItems,fit = TRUE)
 

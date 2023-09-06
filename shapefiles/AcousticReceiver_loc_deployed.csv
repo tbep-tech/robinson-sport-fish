@@ -1,6 +1,6 @@
 ﻿Date,PI,Crew,Receiver_Number,Area_Name,Latitude_deg,Latitude_dm,Latitude_dd,Longitude_deg,Longitude_dm,Longitude_dd,Status,Time_Deployed,Water_Depth,Receiver_Height,Substrate,Salinity,Conductivity,Specific_Conductance,Temperature,YSI,HOBO_SN,Notes
 4/18/2022,AO,BB,138105,Mead Point #1,27,30.908,27.51513333,82,41.089,82.68481667,Inactive,1047,1,0.25,sand,34.77,53.979,52.792,26.2,BE,21309029,"high current, sand hole with sparse thalassia, buoy-concrete block-screw anchor"
-4/18/2022,AO,BB,138107,Mead Point #2,27,31.313,27.52188333,82,40.382,82.67303333,Active,1100,1.3,0.25,sand,34.21,53.398,52.047,26.1,BE,21309024,"sand hole, sparse halodule, a lot of boat traffic in area, buoy-concrete block-screw anchor"
+4/18/2022,AO,BB,138107,Mead Point #2,27,31.313,27.52188333,82,40.382,82.67303333,Inactive,1100,1.3,0.25,sand,34.21,53.398,52.047,26.1,BE,21309024,"sand hole, sparse halodule, a lot of boat traffic in area, buoy-concrete block-screw anchor"
 4/18/2022,AO,BB,138100,Mead Point #3,27,31.413,27.52355,82,39.998,82.66663333,Inactive,1129,1,0.25,sand,34.22,53.471,52.064,26.4,BE,21309026,"sand hole, sparse halodule/thalassia, a lot of boat traffic in area, buoy-concrete block-screw anchor"
 3/1/2023,SS,MS,138847,Mead Point #4,27,31.254,27.5209,82,40.004,82.66673333,Active,,,,,,,,,,,
 4/18/2022,AO,BB,138101,Palma Sola #1,27,29.594,27.49323333,82,40.101,82.66835,Active,930,1.6,1,.,36.37,56.425,54.92,26.4,BE,21309023,tied to channel marker #13

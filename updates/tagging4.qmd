@@ -1,0 +1,12 @@
+---
+title: "New Tags Deployed"
+author: "Jon Peake"
+date: "6/29/2023"
+sidebar: false
+---
+
+On June 27th and 29th, FWRI staff caught, identified, measured, and tagged an additional 9 fish, including 3 Atlantic Tarpon (*Megalops atlanticus*), 4 Sheepshead (*Archosargus probatocephalus*), 1 Goliath Grouper (*Epinephelus itajara*), and 1 Common Snook (*Centropomus undecimalis*). To learn more about Goliath Grouper and our project, check out our [post on Facebook](https://www.facebook.com/FWCResearch/posts/pfbid023iNGMz9aAQwudchzavJnBE2EGgDrpZCn8zcnofRFmafDeTk4eALiZVDKJ4wYywUNl).
+
+![FWRI staff making an incision in a Goliath Grouper caught in Robinson Preserve to implant an acoustic tag.](images/GoliathTag.jpeg)
+
+![FWRI staff stitching an Atlantic Tarpon caught in Robinson Preserve after implanting an acoustic tag.](images/TarponTag.jpeg)
