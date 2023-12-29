@@ -1,129 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Robinson Preserve Sportfish Tagging Project",
-    "section": "",
-    "text": "Many commercially and recreationally important fishes use estuarine habitats as juvenile nursery grounds. However, many of these habitats are threatened by a number of stressors, including rising sea levels and increasing urbanization. Restoration and preservation of affected juvenile habitats can help support adult populations. To see our team in action and get a taste for the project, check out this Youtube Short reel featuring FWRI staff.\n\n\n\n\n\n\n\nThe Robinson Preserve Sport Fish Tagging Project was initiated to determine the extent to which the habitat restoration at Robinson Preserve, a 682-acre area with a variety of restored fisheries nursery habitat, contributes juvenile sport fish to adult populations in the greater Tampa Bay area. The contribution of juveniles is a major information gap that exists for many habitat restoration projects, despite being a realistic metric for evaluating restoration success. With the help of Manatee County Department of Parks and Natural Resources and the National Oceanic and Atmospheric Administration Office of Habitat Conservation, researchers at the Florida Fish and Wildlife Research Institute are seeking to fill this information gap by tagging and tracking the movement of juvenile sport fishes from and within Robinson Preserve.\n\n\n\n\n\n\n\n\n11\nReceivers Placed\n\n\n\n5\nData Downloads\n\n\n\n78\nFish Caught\n\n\n\n\n\n\n\n6\nSpecies Tagged\n\n\n\n57\nTags Implanted\n\n\n\n1.38 million\nDetections\n\n\n\n\n\n\n\n\n\n\n\n\n11\nReceivers Placed\n\n\n\n5\nData Downloads\n\n\n\n78\nFish Caught\n\n\n\n\n\n\n\n6\nSpecies Tagged\n\n\n\n57\nTags Implanted\n\n\n\n1.38 million\nDetections"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Questions and comments about the project or the website can be sent to Meagan Schrandt. All source content for the website can be viewed on Github. All data were obtained through the FWC Fish and Wildlife Research Institute in collaboration with Manatee County and the National Oceanic and Atmospheric Administration. Funding for this project was provided by the Tampa Bay Environmental Restoration Fund."
-  },
-  {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Interactive Data Map",
-    "section": "",
-    "text": "Receiver array data were last downloaded August 2023. Our receivers have heard from all 56 tagged fish, and most recently heard from 30 tagged individuals. 37 fish have been detected by receivers placed outside of the preserve. 9 fish were last detected by receivers outside of the preserve. Click on a specific receiver in the map below to see the species the receiver has detected. Click each waterbody to show where tagged fish were initially caught and released."
-  },
-  {
-    "objectID": "methods.html",
-    "href": "methods.html",
-    "title": "Our Methods in Robinson Preserve",
-    "section": "",
-    "text": "A total of 7 acoustic receivers were placed in various waterbodies within Robinson Preserve; another 6 receivers were placed outside the preserve, generally targeting known and suspected egress points. At each of these 13 receivers, water loggers were also installed to track water temperature and salinity in near real-time. The data are stored within the water loggers and acoustic receivers until the data are downloaded, approximately every 3 to 4 months.\n\n\n\nAn acoustic tag to be\nimplanted in a fish.\n\n\nIn spring (April/May) and fall (Oct/Nov) of 2022 and 2023, we will implant sport fish with acoustic tags. The goal is to tag up to 40 fish in 2022 and another 40 in 2023. These tags can last up to two years, so we will be listening for these fish through 2024. While monitoring these fishes, we will look for the number of ‘pings’ within the various waterbodies to see how fish are using the different waterbodies and nursery habitats, as well as ‘pings’ outside the preserve, which indicates functionality of the nursery habitats as fish have emigrated from the nursery habitat to the adult habitats in Tampa Bay and nearby waters.\nFishes sampled for tagging will be directly targeted and caught using a 40-m seine net. The net is deployed in a circular pattern to capture groups of sportfish in areas where they are observed or expected. This direct targeting of sportfish reduces the incidence of bycatch and maximizes the probability of catching appropriately-sized sport fish.\n\n\n\nA 40-m center bag seine used to encircle and capture targeted groups of sport fish."
-  },
-  {
-    "objectID": "preserve.html",
-    "href": "preserve.html",
-    "title": "Robinson Preserve",
-    "section": "",
-    "text": "Robinson Preserve is a 682-acre restored area located on the southern shore of Tampa Bay. The preserve is positioned approximately five miles east of the Gulf of Mexico and is adjacent to the mouth of the Manatee River, Perico Bayou, and Palma Sola Bay. Historically, the area consisted of coastal wetlands, but these wetlands were drained in the 1920s to allow for agricultural and human use. Multi-agency restoration efforts began in 2003 with the goal to restore the historical hydrology (i.e., water flow) of the area and provide nursery habitat for recreationally important sport fish in the Tampa Bay estuary.\nHydrological restoration allowed coastal wetland vegetation communities to become reestablished. Robinson Preserve now contains a variety of estuarine habitats, including mangrove-lined creeks and salt marshes, that are critical nursery habitats for many sport fish species. The structure of these vegetation communities protects young fish from predators and provides high prey availability. Young-of-the-year (recently hatched and recruited fish) and juvenile Common Snook (Centropomus undecimalis), Red Drum (Sciaenops ocellatus), Spotted Seatrout (Cynoscion nebulosus), and Atlantic Tarpon (Megalops atlanticus) have all been observed in Robinson Preserve.\nIn 2021, an expansion of Robinson Preserve created multiple waterbodies with unique characteristics such as variation in depth and tidal connections, that may affect their performance as nursery habitat for sport fish. These waterbodies were ultimately connected with the Tampa Bay estuary with the intent to provide fisheries nursery habitat, but for a nursery habitat to be truly functional, sub-adult fish must move away (or emigrate) from juvenile to sub-adult and adult habitats.\nThe main goal of this study is to determine if the restored habitats are providing sub-adult fish to the Tampa Bay fishery. To do this, we will use acoustic telemetry to track fish. Sport fish within Robinson Preserve will be implanted with an acoustic (sound) transmitter and we will set up listening stations (i.e., receivers) in and around the preserve to record when tagged fish swim by. If waterbodies within Robinson Preserve are acting as nursery habitats and supplying fish to the sub-adult and adult population, we should eventually detect acoustically tagged fish with receivers located outside the preserve boundary. We can also use telemetry data to examine how juvenile sportfish use different waterbodies within the preserve, determine which corridors are most effective for emigration, and look for differences in habitat use among species. The information obtained from this study will be useful for future restoration design and construction."
-  },
-  {
-    "objectID": "tagging/importance.html",
-    "href": "tagging/importance.html",
-    "title": "Importance of Tagging",
-    "section": "",
-    "text": "Studying animal movement is important for researchers because it gives us insight into the habitats animals use for different purposes, which can help determine their biological requirements and the ecological factors that contribute to their persistence. Unfortunately, visual observation of animals in aquatic environments can be quite difficult, especially for extended periods of time. Acoustic telemetry is a tool used by researchers to monitor the movements of animals in aquatic environments, often over vast areas for several years. Acoustic telemetry gives researchers a window into an otherwise unknown world. It allows researchers to observe individual fish as they move through their environment and use habitats throughout their life cycle, which can help resource managers make management decisions and implement science-based conservation initiatives.\n\n\n\nFWRI staff finishing acoustic tag implantation surgery on a juvenile Red Drum in Robinson Preserve."
-  },
-  {
-    "objectID": "tagging/works.html",
-    "href": "tagging/works.html",
-    "title": "How Acoustic Tagging Works",
-    "section": "",
-    "text": "For studies focused on fish movement, acoustic tags (or transmitters) are typically surgically implanted into the abdomen of the fish. The size of the tag varies depending on the species of interest to avoid altering the animal’s behavior and ensure survivorship. Once implanted, the acoustic tags emit short pulses of sound that communicate a unique identifier at preset intervals. These ‘pings’ are detected by a nearby hydrophone, or acoustic receiver, that stores the detection data so it can be downloaded and analyzed by the researcher.\n\n\n\nAcoustic telemetry works through a series of tags and receivers. Tags embedded in fish send ‘pings’ that are detected by receivers spaced across the area of interest (Jim Whittington, FWRI).\n\n\nWhen researchers design acoustic telemetry studies, careful consideration and planning must occur to ensure that receivers are strategically located to detect fish in all areas of interest. Acoustic tags continue to ping until no battery power remains, so there is potential for animals to move great distances from their initial tagging location before the tag dies. The acoustic tag will remain in the fish for its entire life, but we will no longer receive location information once the battery is too weak to transmit. Acoustic telemetry networks allow researchers to collaborate and communicate detections of other researchers’ tags as they download their telemetry data. These telemetry networks, such as iTAG (Integrated Tracking of Animals in the Gulf of Mexico), essentially integrate the acoustic arrays of all users, which may allow for tag detections significant distances away from where the animal was first tagged, increasing our knowledge base.\n\n\n\nAcoustic receiver and water quality logger before being deployed in shallow water environment adjacent to Robinson Preserve."
-  },
-  {
-    "objectID": "updates/download1.html",
-    "href": "updates/download1.html",
-    "title": "First Data Download",
-    "section": "",
-    "text": "On August 23-24, FWRI staff recovered data from 11 acoustic receivers and 4 water loggers within and adjacent to Robinson Preserve. Our acoustic receivers revealed over 300,000 detections, including detections from all 22 fish that were tagged in April 2022. Preliminary analyses showed that several of our tagged fish potentially exited the preserve at some point during the four months since the initial tagging occurred."
-  },
-  {
-    "objectID": "updates/download2.html",
-    "href": "updates/download2.html",
-    "title": "Second Data Download",
-    "section": "",
-    "text": "On December 5th, FWRI staff recovered data from 11 acoustic receivers and 4 water loggers within and adjacent to Robinson Preserve. Our acoustic receivers revealed almost an additional 300,000 detections, including detections from 18 of the 26 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside of the preserve.\nStaff also deployed 2 additional acoustic receivers to replace receiver arrays that were unrecoverable.\n\n\n\nResearchers use jon boats to download receiver data and deploy new receivers.\n\n\n\n\n\nReceiver arrays were deployed in camouflaged housings. These housings protect the receiver from impact and discourage tampering.\n\n\n\n\n\nReceiver arrays are great potential habitat for mussels, barnacles, and other encrusting invertebrates. Staff often need to clean off these settlers to access the receiver for download."
-  },
-  {
-    "objectID": "updates/first.html",
-    "href": "updates/first.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "Welcome to our website! In this Project Updates section, we will provide information on the latest progress our research team has made towards assessing juvenile contributions from Robinson Preserve to Tampa Bay adult populations. Stay tuned!"
-  },
-  {
-    "objectID": "updates/receivers.html",
-    "href": "updates/receivers.html",
-    "title": "Receiver Deployment",
-    "section": "",
-    "text": "On April 18th, 2022, 13 acoustic receivers were deployed at various locations around Robinson Preserve to monitor the movement of juvenile sport fishes within and out of the preserve area.\n\n\n\nAcoustic receiver and water quality logger deployed in shallow seagrass bed adjacent to Robinson Preserve."
-  },
-  {
-    "objectID": "updates/tagging1.html",
-    "href": "updates/tagging1.html",
-    "title": "First Tags Deployed",
-    "section": "",
-    "text": "From April 25- April 27th, FWRI staff caught, identified, and measured 43 sport fish in Robinson Preserve. They implanted acoustic tags in 22 fishes, including four tags in Red Drum (Sciaenops ocellatus), five tags in Atlantic Tarpon (Megalops atlanticus), and 13 tags in Common Snook (Centropomus undecimalis).\n\n\n\nFWRI staff finishing acoustic tag implantation surgery on a juvenile Red Drum in Robinson Preserve.\n\n\n\n\n\nFWRI staff releasing a juvenile Red Drum after acoustic tag implantation surgery in Robinson Preserve.\n\n\n\n\n\nFWRI staff releasing juvenile Atlantic Tarpon after acoustic tag implantation surgery in Robinson Preserve."
-  },
-  {
-    "objectID": "updates/tagging2.html",
-    "href": "updates/tagging2.html",
-    "title": "New Tags Deployed",
-    "section": "",
-    "text": "On November 17, FWRI staff caught, identified, measured, and tagged an additional 4 Atlantic Tarpon (Megalops atlanticus). We have now tagged a total of 26 fish for this project."
-  },
-  {
     "objectID": "updates.html",
     "href": "updates.html",
     "title": "Project Updates",
     "section": "",
-    "text": "+\n-\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nFifth Data Download\n\n\n\n\n\n\n\n\n\n\n\n\nAug 15, 2023\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nNew Tags Deployed\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2023\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nFourth Data Download\n\n\n\n\n\n\n\n\n\n\n\n\nMay 22, 2023\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nNew Tags Deployed\n\n\n\n\n\n\n\n\n\n\n\n\nMar 28, 2023\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nThird Data Download\n\n\n\n\n\n\n\n\n\n\n\n\nMar 3, 2023\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nSecond Data Download\n\n\n\n\n\n\n\n\n\n\n\n\nDec 5, 2022\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nNew Tags Deployed\n\n\n\n\n\n\n\n\n\n\n\n\nNov 17, 2022\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nFirst Data Download\n\n\n\n\n\n\n\n\n\n\n\n\nSep 20, 2022\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nWelcome\n\n\n\n\n\n\n\n\n\n\n\n\nJun 15, 2022\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nFirst Tags Deployed\n\n\n\n\n\n\n\n\n\n\n\n\nApr 27, 2022\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nReceiver Deployment\n\n\n\n\n\n\n\n\n\n\n\n\nApr 18, 2022\n\n\nJon Peake\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "updates/download3.html",
-    "href": "updates/download3.html",
-    "title": "Third Data Download",
-    "section": "",
-    "text": "On February 21st and 22nd, FWRI staff recovered data from 11 acoustic receivers and 4 water loggers within and adjacent to Robinson Preserve. Our acoustic receivers revealed an additional 200,000 detections, including detections from 18 of the 27 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside of the preserve.\nOne acoustic array was unrecoverable, while a second receiver was found by an eagle-eyed civilian and returned to FWRI staff."
-  },
-  {
-    "objectID": "updates/testing.html",
-    "href": "updates/testing.html",
-    "title": "Test",
-    "section": "",
-    "text": "update test"
-  },
-  {
-    "objectID": "index.html#tracking-juvenile-sport-fish-movement-from-a-habitat-restoration-site-to-fished-populations-of-tampa-bay",
-    "href": "index.html#tracking-juvenile-sport-fish-movement-from-a-habitat-restoration-site-to-fished-populations-of-tampa-bay",
-    "title": "Robinson Preserve Sportfish Tagging Project",
-    "section": "",
-    "text": "Many commercially and recreationally important fishes use estuarine habitats as juvenile nursery grounds. However, many of these habitats are threatened by a number of stressors, including rising sea levels and increasing urbanization. Restoration and preservation of affected juvenile habitats can help support adult populations. To see our team in action and get a taste for the project, check out this Youtube Short reel featuring FWRI staff.\n\n\n\n\n\n\n\nThe Robinson Preserve Sport Fish Tagging Project was initiated to determine the extent to which the habitat restoration at Robinson Preserve, a 682-acre area with a variety of restored fisheries nursery habitat, contributes juvenile sport fish to adult populations in the greater Tampa Bay area. The contribution of juveniles is a major information gap that exists for many habitat restoration projects, despite being a realistic metric for evaluating restoration success. With the help of Manatee County Department of Parks and Natural Resources and the National Oceanic and Atmospheric Administration Office of Habitat Conservation, researchers at the Florida Fish and Wildlife Research Institute are seeking to fill this information gap by tagging and tracking the movement of juvenile sport fishes from and within Robinson Preserve.\n\n\n\n\n\n\n\n\n11\nReceivers Placed\n\n\n\n5\nData Downloads\n\n\n\n78\nFish Caught\n\n\n\n\n\n\n\n6\nSpecies Tagged\n\n\n\n57\nTags Implanted\n\n\n\n1.38 million\nDetections\n\n\n\n\n\n\n\n\n\n\n\n\n11\nReceivers Placed\n\n\n\n5\nData Downloads\n\n\n\n78\nFish Caught\n\n\n\n\n\n\n\n6\nSpecies Tagged\n\n\n\n57\nTags Implanted\n\n\n\n1.38 million\nDetections"
-  },
-  {
-    "objectID": "updates/download4.html",
-    "href": "updates/download4.html",
-    "title": "Fourth Data Download",
-    "section": "",
-    "text": "On May 18th, FWRI staff recovered data from 12 acoustic receivers and 3 water loggers within and adjacent to Robinson Preserve. Our acoustic receivers revealed an additional 232,000 detections, including detections from 18 of the 44 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside of the preserve.\n\n\n\nFWRI staff showing off the housing for one of our acoustic receivers after retrieval."
+    "text": "+\n-\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nSixth Data Download\n\n\n\n\n\n\n\n\n\n\n\n\nNov 17, 2023\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nFifth Data Download\n\n\n\n\n\n\n\n\n\n\n\n\nAug 15, 2023\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nNew Tags Deployed\n\n\n\n\n\n\n\n\n\n\n\n\nJun 29, 2023\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nFourth Data Download\n\n\n\n\n\n\n\n\n\n\n\n\nMay 22, 2023\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nNew Tags Deployed\n\n\n\n\n\n\n\n\n\n\n\n\nMar 28, 2023\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nThird Data Download\n\n\n\n\n\n\n\n\n\n\n\n\nMar 3, 2023\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nSecond Data Download\n\n\n\n\n\n\n\n\n\n\n\n\nDec 5, 2022\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nNew Tags Deployed\n\n\n\n\n\n\n\n\n\n\n\n\nNov 17, 2022\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nFirst Data Download\n\n\n\n\n\n\n\n\n\n\n\n\nSep 20, 2022\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nWelcome\n\n\n\n\n\n\n\n\n\n\n\n\nJun 15, 2022\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nFirst Tags Deployed\n\n\n\n\n\n\n\n\n\n\n\n\nApr 27, 2022\n\n\nJon Peake\n\n\n\n\n\n\n  \n\n\n\n\nReceiver Deployment\n\n\n\n\n\n\n\n\n\n\n\n\nApr 18, 2022\n\n\nJon Peake\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "updates/tagging3.html",
@@ -133,11 +14,130 @@
     "text": "On March 28th, FWRI staff caught, identified, measured, and tagged an additional 15 fish, including 9 Common Snook (Centropomus undecimalis) and 6 Black Drum (Pogonias cromis). We have now tagged a total of 42 fish for this project."
   },
   {
+    "objectID": "updates/tagging1.html",
+    "href": "updates/tagging1.html",
+    "title": "First Tags Deployed",
+    "section": "",
+    "text": "From April 25- April 27th, FWRI staff caught, identified, and measured 43 sport fish in Robinson Preserve. They implanted acoustic tags in 22 fishes, including four tags in Red Drum (Sciaenops ocellatus), five tags in Atlantic Tarpon (Megalops atlanticus), and 13 tags in Common Snook (Centropomus undecimalis).\n\n\n\nFWRI staff finishing acoustic tag implantation surgery on a juvenile Red Drum in Robinson Preserve.\n\n\n\n\n\nFWRI staff releasing a juvenile Red Drum after acoustic tag implantation surgery in Robinson Preserve.\n\n\n\n\n\nFWRI staff releasing juvenile Atlantic Tarpon after acoustic tag implantation surgery in Robinson Preserve."
+  },
+  {
+    "objectID": "updates/first.html",
+    "href": "updates/first.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to our website! In this Project Updates section, we will provide information on the latest progress our research team has made towards assessing juvenile contributions from Robinson Preserve to Tampa Bay adult populations. Stay tuned!"
+  },
+  {
     "objectID": "updates/download5.html",
     "href": "updates/download5.html",
     "title": "Fifth Data Download",
     "section": "",
     "text": "On August 14th, FWRI staff recovered data from 11 acoustic receivers and 1 water logger within and adjacent to Robinson Preserve. Our acoustic receivers revealed an additional 329,000 detections, including detections from 31 of the 57 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside the preserve."
+  },
+  {
+    "objectID": "updates/download3.html",
+    "href": "updates/download3.html",
+    "title": "Third Data Download",
+    "section": "",
+    "text": "On February 21st and 22nd, FWRI staff recovered data from 11 acoustic receivers and 4 water loggers within and adjacent to Robinson Preserve. Our acoustic receivers revealed an additional 200,000 detections, including detections from 18 of the 27 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside of the preserve.\nOne acoustic array was unrecoverable, while a second receiver was found by an eagle-eyed civilian and returned to FWRI staff."
+  },
+  {
+    "objectID": "updates/download1.html",
+    "href": "updates/download1.html",
+    "title": "First Data Download",
+    "section": "",
+    "text": "On August 23-24, FWRI staff recovered data from 11 acoustic receivers and 4 water loggers within and adjacent to Robinson Preserve. Our acoustic receivers revealed over 300,000 detections, including detections from all 22 fish that were tagged in April 2022. Preliminary analyses showed that several of our tagged fish potentially exited the preserve at some point during the four months since the initial tagging occurred."
+  },
+  {
+    "objectID": "tagging/importance.html",
+    "href": "tagging/importance.html",
+    "title": "Importance of Tagging",
+    "section": "",
+    "text": "Studying animal movement is important for researchers because it gives us insight into the habitats animals use for different purposes, which can help determine their biological requirements and the ecological factors that contribute to their persistence. Unfortunately, visual observation of animals in aquatic environments can be quite difficult, especially for extended periods of time. Acoustic telemetry is a tool used by researchers to monitor the movements of animals in aquatic environments, often over vast areas for several years. Acoustic telemetry gives researchers a window into an otherwise unknown world. It allows researchers to observe individual fish as they move through their environment and use habitats throughout their life cycle, which can help resource managers make management decisions and implement science-based conservation initiatives.\n\n\n\nFWRI staff finishing acoustic tag implantation surgery on a juvenile Red Drum in Robinson Preserve."
+  },
+  {
+    "objectID": "methods.html",
+    "href": "methods.html",
+    "title": "Our Methods in Robinson Preserve",
+    "section": "",
+    "text": "A total of 7 acoustic receivers were placed in various waterbodies within Robinson Preserve; another 6 receivers were placed outside the preserve, generally targeting known and suspected egress points. At each of these 13 receivers, water loggers were also installed to track water temperature and salinity in near real-time. The data are stored within the water loggers and acoustic receivers until the data are downloaded, approximately every 3 to 4 months.\n\n\n\nAn acoustic tag to be\nimplanted in a fish.\n\n\nIn spring (April/May) and fall (Oct/Nov) of 2022 and 2023, we will implant sport fish with acoustic tags. The goal is to tag up to 40 fish in 2022 and another 40 in 2023. These tags can last up to two years, so we will be listening for these fish through 2024. While monitoring these fishes, we will look for the number of ‘pings’ within the various waterbodies to see how fish are using the different waterbodies and nursery habitats, as well as ‘pings’ outside the preserve, which indicates functionality of the nursery habitats as fish have emigrated from the nursery habitat to the adult habitats in Tampa Bay and nearby waters.\nFishes sampled for tagging will be directly targeted and caught using a 40-m seine net. The net is deployed in a circular pattern to capture groups of sportfish in areas where they are observed or expected. This direct targeting of sportfish reduces the incidence of bycatch and maximizes the probability of catching appropriately-sized sport fish.\n\n\n\nA 40-m center bag seine used to encircle and capture targeted groups of sport fish."
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Interactive Data Map",
+    "section": "",
+    "text": "Receiver array data were last downloaded November 2023. Our receivers have heard from all 57 tagged fish, and most recently heard from 34 tagged individuals. 42 fish have been detected by receivers placed outside of the preserve. 19 fish were last detected by receivers outside of the preserve. Click on a specific receiver in the map below to see the species the receiver has detected. Click each waterbody to show where tagged fish were initially caught and released."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Questions and comments about the project or the website can be sent to Meagan Schrandt. All source content for the website can be viewed on Github. All data were obtained through the FWC Fish and Wildlife Research Institute in collaboration with Manatee County and the National Oceanic and Atmospheric Administration. Funding for this project was provided by the Tampa Bay Environmental Restoration Fund."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Robinson Preserve Sportfish Tagging Project",
+    "section": "",
+    "text": "Many commercially and recreationally important fishes use estuarine habitats as juvenile nursery grounds. However, many of these habitats are threatened by a number of stressors, including rising sea levels and increasing urbanization. Restoration and preservation of affected juvenile habitats can help support adult populations. To see our team in action and get a taste for the project, check out this Youtube Short reel featuring FWRI staff.\n\n\n\n\n\n\n\nThe Robinson Preserve Sport Fish Tagging Project was initiated to determine the extent to which the habitat restoration at Robinson Preserve, a 682-acre area with a variety of restored fisheries nursery habitat, contributes juvenile sport fish to adult populations in the greater Tampa Bay area. The contribution of juveniles is a major information gap that exists for many habitat restoration projects, despite being a realistic metric for evaluating restoration success. With the help of Manatee County Department of Parks and Natural Resources and the National Oceanic and Atmospheric Administration Office of Habitat Conservation, researchers at the Florida Fish and Wildlife Research Institute are seeking to fill this information gap by tagging and tracking the movement of juvenile sport fishes from and within Robinson Preserve.\n\n\n\n\n\n\n\n\n11\nReceivers Placed\n\n\n\n5\nData Downloads\n\n\n\n78\nFish Caught\n\n\n\n\n\n\n\n6\nSpecies Tagged\n\n\n\n57\nTags Implanted\n\n\n\n1.38 million\nDetections\n\n\n\n\n\n\n\n\n\n\n\n\n11\nReceivers Placed\n\n\n\n5\nData Downloads\n\n\n\n78\nFish Caught\n\n\n\n\n\n\n\n6\nSpecies Tagged\n\n\n\n57\nTags Implanted\n\n\n\n1.38 million\nDetections"
+  },
+  {
+    "objectID": "index.html#tracking-juvenile-sport-fish-movement-from-a-habitat-restoration-site-to-fished-populations-of-tampa-bay",
+    "href": "index.html#tracking-juvenile-sport-fish-movement-from-a-habitat-restoration-site-to-fished-populations-of-tampa-bay",
+    "title": "Robinson Preserve Sportfish Tagging Project",
+    "section": "",
+    "text": "Many commercially and recreationally important fishes use estuarine habitats as juvenile nursery grounds. However, many of these habitats are threatened by a number of stressors, including rising sea levels and increasing urbanization. Restoration and preservation of affected juvenile habitats can help support adult populations. To see our team in action and get a taste for the project, check out this Youtube Short reel featuring FWRI staff.\n\n\n\n\n\n\n\nThe Robinson Preserve Sport Fish Tagging Project was initiated to determine the extent to which the habitat restoration at Robinson Preserve, a 682-acre area with a variety of restored fisheries nursery habitat, contributes juvenile sport fish to adult populations in the greater Tampa Bay area. The contribution of juveniles is a major information gap that exists for many habitat restoration projects, despite being a realistic metric for evaluating restoration success. With the help of Manatee County Department of Parks and Natural Resources and the National Oceanic and Atmospheric Administration Office of Habitat Conservation, researchers at the Florida Fish and Wildlife Research Institute are seeking to fill this information gap by tagging and tracking the movement of juvenile sport fishes from and within Robinson Preserve.\n\n\n\n\n\n\n\n\n11\nReceivers Placed\n\n\n\n5\nData Downloads\n\n\n\n78\nFish Caught\n\n\n\n\n\n\n\n6\nSpecies Tagged\n\n\n\n57\nTags Implanted\n\n\n\n1.38 million\nDetections\n\n\n\n\n\n\n\n\n\n\n\n\n11\nReceivers Placed\n\n\n\n5\nData Downloads\n\n\n\n78\nFish Caught\n\n\n\n\n\n\n\n6\nSpecies Tagged\n\n\n\n57\nTags Implanted\n\n\n\n1.38 million\nDetections"
+  },
+  {
+    "objectID": "preserve.html",
+    "href": "preserve.html",
+    "title": "Robinson Preserve",
+    "section": "",
+    "text": "Robinson Preserve is a 682-acre restored area located on the southern shore of Tampa Bay. The preserve is positioned approximately five miles east of the Gulf of Mexico and is adjacent to the mouth of the Manatee River, Perico Bayou, and Palma Sola Bay. Historically, the area consisted of coastal wetlands, but these wetlands were drained in the 1920s to allow for agricultural and human use. Multi-agency restoration efforts began in 2003 with the goal to restore the historical hydrology (i.e., water flow) of the area and provide nursery habitat for recreationally important sport fish in the Tampa Bay estuary.\nHydrological restoration allowed coastal wetland vegetation communities to become reestablished. Robinson Preserve now contains a variety of estuarine habitats, including mangrove-lined creeks and salt marshes, that are critical nursery habitats for many sport fish species. The structure of these vegetation communities protects young fish from predators and provides high prey availability. Young-of-the-year (recently hatched and recruited fish) and juvenile Common Snook (Centropomus undecimalis), Red Drum (Sciaenops ocellatus), Spotted Seatrout (Cynoscion nebulosus), and Atlantic Tarpon (Megalops atlanticus) have all been observed in Robinson Preserve.\nIn 2021, an expansion of Robinson Preserve created multiple waterbodies with unique characteristics such as variation in depth and tidal connections, that may affect their performance as nursery habitat for sport fish. These waterbodies were ultimately connected with the Tampa Bay estuary with the intent to provide fisheries nursery habitat, but for a nursery habitat to be truly functional, sub-adult fish must move away (or emigrate) from juvenile to sub-adult and adult habitats.\nThe main goal of this study is to determine if the restored habitats are providing sub-adult fish to the Tampa Bay fishery. To do this, we will use acoustic telemetry to track fish. Sport fish within Robinson Preserve will be implanted with an acoustic (sound) transmitter and we will set up listening stations (i.e., receivers) in and around the preserve to record when tagged fish swim by. If waterbodies within Robinson Preserve are acting as nursery habitats and supplying fish to the sub-adult and adult population, we should eventually detect acoustically tagged fish with receivers located outside the preserve boundary. We can also use telemetry data to examine how juvenile sportfish use different waterbodies within the preserve, determine which corridors are most effective for emigration, and look for differences in habitat use among species. The information obtained from this study will be useful for future restoration design and construction."
+  },
+  {
+    "objectID": "tagging/works.html",
+    "href": "tagging/works.html",
+    "title": "How Acoustic Tagging Works",
+    "section": "",
+    "text": "For studies focused on fish movement, acoustic tags (or transmitters) are typically surgically implanted into the abdomen of the fish. The size of the tag varies depending on the species of interest to avoid altering the animal’s behavior and ensure survivorship. Once implanted, the acoustic tags emit short pulses of sound that communicate a unique identifier at preset intervals. These ‘pings’ are detected by a nearby hydrophone, or acoustic receiver, that stores the detection data so it can be downloaded and analyzed by the researcher.\n\n\n\nAcoustic telemetry works through a series of tags and receivers. Tags embedded in fish send ‘pings’ that are detected by receivers spaced across the area of interest (Jim Whittington, FWRI).\n\n\nWhen researchers design acoustic telemetry studies, careful consideration and planning must occur to ensure that receivers are strategically located to detect fish in all areas of interest. Acoustic tags continue to ping until no battery power remains, so there is potential for animals to move great distances from their initial tagging location before the tag dies. The acoustic tag will remain in the fish for its entire life, but we will no longer receive location information once the battery is too weak to transmit. Acoustic telemetry networks allow researchers to collaborate and communicate detections of other researchers’ tags as they download their telemetry data. These telemetry networks, such as iTAG (Integrated Tracking of Animals in the Gulf of Mexico), essentially integrate the acoustic arrays of all users, which may allow for tag detections significant distances away from where the animal was first tagged, increasing our knowledge base.\n\n\n\nAcoustic receiver and water quality logger before being deployed in shallow water environment adjacent to Robinson Preserve."
+  },
+  {
+    "objectID": "updates/download2.html",
+    "href": "updates/download2.html",
+    "title": "Second Data Download",
+    "section": "",
+    "text": "On December 5th, FWRI staff recovered data from 11 acoustic receivers and 4 water loggers within and adjacent to Robinson Preserve. Our acoustic receivers revealed almost an additional 300,000 detections, including detections from 18 of the 26 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside of the preserve.\nStaff also deployed 2 additional acoustic receivers to replace receiver arrays that were unrecoverable.\n\n\n\nResearchers use jon boats to download receiver data and deploy new receivers.\n\n\n\n\n\nReceiver arrays were deployed in camouflaged housings. These housings protect the receiver from impact and discourage tampering.\n\n\n\n\n\nReceiver arrays are great potential habitat for mussels, barnacles, and other encrusting invertebrates. Staff often need to clean off these settlers to access the receiver for download."
+  },
+  {
+    "objectID": "updates/download4.html",
+    "href": "updates/download4.html",
+    "title": "Fourth Data Download",
+    "section": "",
+    "text": "On May 18th, FWRI staff recovered data from 12 acoustic receivers and 3 water loggers within and adjacent to Robinson Preserve. Our acoustic receivers revealed an additional 232,000 detections, including detections from 18 of the 44 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside of the preserve.\n\n\n\nFWRI staff showing off the housing for one of our acoustic receivers after retrieval."
+  },
+  {
+    "objectID": "updates/download6.html",
+    "href": "updates/download6.html",
+    "title": "Sixth Data Download",
+    "section": "",
+    "text": "On August 14th, FWRI staff recovered data from 11 acoustic receivers and 1 water logger within and adjacent to Robinson Preserve. Our acoustic receivers revealed an additional 498,000 detections, including detections from 34 of the 57 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside the preserve."
+  },
+  {
+    "objectID": "updates/receivers.html",
+    "href": "updates/receivers.html",
+    "title": "Receiver Deployment",
+    "section": "",
+    "text": "On April 18th, 2022, 13 acoustic receivers were deployed at various locations around Robinson Preserve to monitor the movement of juvenile sport fishes within and out of the preserve area.\n\n\n\nAcoustic receiver and water quality logger deployed in shallow seagrass bed adjacent to Robinson Preserve.\n\n\n\n\nWarning: package 'tidyverse' was built under R version 4.2.3\n\n\nWarning: package 'ggplot2' was built under R version 4.2.3\n\n\nWarning: package 'tibble' was built under R version 4.2.3\n\n\nWarning: package 'tidyr' was built under R version 4.2.3\n\n\nWarning: package 'readr' was built under R version 4.2.3\n\n\nWarning: package 'purrr' was built under R version 4.2.3\n\n\nWarning: package 'dplyr' was built under R version 4.2.3\n\n\nWarning: package 'stringr' was built under R version 4.2.3\n\n\nWarning: package 'forcats' was built under R version 4.2.3\n\n\nWarning: package 'lubridate' was built under R version 4.2.3\n\n\nWarning: package 'sf' was built under R version 4.2.3\n\n\nWarning: package 'mapview' was built under R version 4.2.3"
+  },
+  {
+    "objectID": "updates/tagging2.html",
+    "href": "updates/tagging2.html",
+    "title": "New Tags Deployed",
+    "section": "",
+    "text": "On November 17, FWRI staff caught, identified, measured, and tagged an additional 4 Atlantic Tarpon (Megalops atlanticus). We have now tagged a total of 26 fish for this project."
   },
   {
     "objectID": "updates/tagging4.html",
