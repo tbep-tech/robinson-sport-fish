@@ -59,7 +59,7 @@ ponddat <- st_read('shapefiles/Robinson_Preserve.shp', quiet = T) %>%
   #group by ponds and make them into polygon outlines
   group_by(Pond, Type) %>%
   summarise() %>%
-  st_cast("POLYGON") %>%
+  # st_cast("POLYGON") %>%
   #for the outer polygon
   st_convex_hull()
 

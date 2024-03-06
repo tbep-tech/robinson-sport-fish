@@ -19,7 +19,7 @@ library(odbc)
 library(DBI)
 library(dbplyr)
 library(ggimage)
-
+sf_use_s2(T)
 #### Prep spatial data layers ####
 
 # read in Tampa Bay Shoreline shapefile
@@ -44,14 +44,16 @@ expansiondat <- st_read('shapefiles/RobPres_Expansion_Poly.shp', quiet = T) %>%
 #read in FIM pond outlines
 ponddat <- st_read('shapefiles/Robinson_Preserve.shp', quiet = T) %>%
   mutate(Pond = str_replace(str_sub(FolderPath, 24, 29),"_"," "),
-         Type = case_when(Pond %in% c("Pond_6", "Pond_7") ~ "Natural",
+         Type = case_when(Pond %in% c("Pond 6", "Pond 7") ~ "Natural",
                           TRUE ~ "Restored")) %>%
 
   #group by ponds and make them into polygon outlines
   group_by(Pond, Type) %>%
   summarise() %>%
-  st_cast("POLYGON") %>%
-  #for the outer polygon
+  ungroup() %>%
+  # st_cast("POLYGON") %>%
+   
+  # #for the outer polygon
   st_convex_hull()
 
 #locations of water loggers installed during restoration monitoring (different grant than acoustics)
@@ -232,8 +234,8 @@ mapview(preservedat,
   mapview(ponddat, 
           col.regions = "lightblue", 
           layer.name = "Waterbodies",
-          label = ponddat$Pond,
-          popup = popupGraph(pond_charts, height = 800, width = 800)) +
+          label = ponddat$Pond) +
+          # popup = popupGraph(pond_charts, height = 800, width = 800)) +
   mapview(receiver.shp, 
           zcol = 'Status',
           col.regions = c('yellow','gray'), 
