@@ -6,11 +6,11 @@ sidebar: false
 Questions and comments about the project or the website can be sent to [Meagan Schrandt](mailto:Meagan.Schrandt@MyFWC.com). All source content for the website can be viewed on [Github](https://github.com/tbep-tech/robinson-sport-fish/). All data were obtained through the [FWC Fish and Wildlife Research Institute](https://myfwc.com/research/) in collaboration with [Manatee County](https://www.mymanatee.org/departments/natural_resources) and the [National Oceanic and Atmospheric Administration](https://www.fisheries.noaa.gov/about/office-habitat-conservation). Funding for this project was provided by the [Tampa Bay Environmental Restoration Fund](https://estuaries.org/tampa-bay-environmental-restoration-fund/).
 
 ::: {layout-ncol="2"}
-![](images/FWC%20seal%20c.png){width="206"}
+![](images/FWC%20seal%20c.png){fig-align="center" width="206"}
 
-![](images/manatee_county.png){width="401"}
+![](images/manatee_county.png){fig-align="center" width="401"}
 
-![](images/NOAA_logo.png){width="250"}
+![](images/NOAA_logo.png){fig-align="center" width="250"}
 
-![](images/paste-C6810F09.png){width="243"}
+![](images/paste-C6810F09.png){fig-align="center" width="243"}
 :::
