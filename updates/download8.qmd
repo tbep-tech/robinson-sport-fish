@@ -1,0 +1,12 @@
+---
+title: "Eighth Data Download"
+author: "Jon Peake"
+date: '05/29/2024'
+sidebar: false
+---
+
+On May 29th, FWRI staff recovered data from 9 out of the 10 acoustic receivers deployed in and around Robinson Preserve. Our acoustic receivers revealed an additional 250,000 detections, including detections from 24 of the 57 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside the preserve.
+
+Unfortunately, our Mead Point #3 receiver experienced an internal error preventing download of the data stored on the device. FWRI staff were able to replace the receiver with a spare receiver. We hope to be able to recover data from the damaged receiver at a future date.
+
+Our custom-built temperature loggers continue to undergo testing. FWRI staff were able to successfully download from several of the loggers, but we continue to troubleshoot and test the remaining loggers. They also deployed several HOBO pendant temperature loggers for further testing.

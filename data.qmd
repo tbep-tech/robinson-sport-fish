@@ -194,7 +194,8 @@ pond_tags <- tags %>%
              scale_x_continuous(limits = c(-1,1)) +
              scale_size_identity() +
              theme_void()
-         }))
+         })) %>%
+  filter(!is.na(Pond))
   
 
 # receiver_plots <- ggplot() +
@@ -234,8 +235,8 @@ mapview(preservedat,
   mapview(ponddat, 
           col.regions = "lightblue", 
           layer.name = "Waterbodies",
-          label = ponddat$Pond) +
-          # popup = popupGraph(pond_charts, height = 800, width = 800)) +
+          label = ponddat$Pond,
+          popup = popupGraph(pond_charts, height = 800, width = 800)) +
   mapview(receiver.shp, 
           zcol = 'Status',
           col.regions = c('yellow','gray'), 
