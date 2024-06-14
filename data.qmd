@@ -3,7 +3,7 @@ title: "Interactive Data Map"
 sidebar: false
 ---
 
-Receiver array data were last downloaded February 2024. Our receivers have heard from 57 of the 64 tagged fish, and most recently heard from 27 tagged individuals. 43 fish have been detected by receivers placed outside of the preserve. 16 fish were last detected by receivers outside of the preserve. Click on a specific receiver in the map below to see the species the receiver has detected. Click each waterbody to show where tagged fish were initially caught and released.
+Receiver array data were last downloaded May 2024. Our receivers have heard from 60 of the 79 tagged fish, and most recently heard from 23 tagged individuals. 46 fish have been detected by receivers placed outside of the preserve. 16 fish were last detected by receivers outside of the preserve. Click on a specific receiver in the map below to see the species the receiver has detected. Click each waterbody to show where tagged fish were initially caught and released.
 
 ```{r}
 #| echo: false
@@ -142,17 +142,17 @@ receivers_dat <- full_join(receiver.shp,tagged, by = c("Receiver_Number")) %>%
          } else {
            ggplot(dat) +
              geom_image(aes(x = 0, 
-                            y = (1:nrow(dat)-1)*10,
+                            y = (1:nrow(dat)-1)*5,
                             image = filter(fish_images, species %in% dat$CommonName)$img),
-                        size = 0.15, by = 'height') +
+                        size = 0.1, by = 'height') +
              geom_text(aes(x = 0, 
-                           y = (1:nrow(dat)-1)*10 - 4,
+                           y = (1:nrow(dat)-1)*5 - 2,
                            label = CommonName), 
-                       size = 6) +
+                       size = 4) +
              geom_text(aes(x = 0, 
-                           y = (1:nrow(dat)-1)*10 - 5,
+                           y = (1:nrow(dat)-1)*5 - 3,
                            label = paste0(n_detect, " daily detections from ",n_fish, " fish")),
-                       size = 6) +
+                       size = 4) +
              scale_y_continuous(expand = expansion(add = 3)) +
              scale_x_continuous(limits = c(-1,1)) +
              scale_size_identity() +
@@ -179,17 +179,17 @@ pond_tags <- tags %>%
          } else {
            ggplot(dat) +
              geom_image(aes(x = 0, 
-                            y = (1:nrow(dat)-1)*10, 
+                            y = (1:nrow(dat)-1)*5, 
                             image = filter(fish_images, species %in% dat$CommonName)$img),
-                        size = .15, by = 'height') +
+                        size = .1, by = 'height') +
              geom_text(aes(x = 0, 
-                           y = (1:nrow(dat)-1)*10 - 4, 
+                           y = (1:nrow(dat)-1)*5 - 2, 
                            label = CommonName), 
-                       size = 6) +
+                       size = 4) +
              geom_text(aes(x = 0, 
-                           y = (1:nrow(dat)-1)*10 - 5,
+                           y = (1:nrow(dat)-1)*5 - 3,
                            label = paste0(Count, " fish tagged")),
-                       size = 6) +
+                       size = 4) +
              scale_y_continuous(expand = expansion(add = 3)) +
              scale_x_continuous(limits = c(-1,1)) +
              scale_size_identity() +
@@ -236,7 +236,7 @@ mapview(preservedat,
           col.regions = "lightblue", 
           layer.name = "Waterbodies",
           label = ponddat$Pond,
-          popup = popupGraph(pond_charts, height = 800, width = 800)) +
+          popup = popupGraph(pond_charts, height = 400, width = 200)) +
   mapview(receiver.shp, 
           zcol = 'Status',
           col.regions = c('yellow','gray'), 
@@ -244,7 +244,7 @@ mapview(preservedat,
           alpha.regions = 10, 
           layer.name = "Receiver Locations",
           label = receiver.shp$Area_Name,
-          popup = popupGraph(receiver_plots, height = 800, width = 800)) +
+          popup = popupGraph(receiver_plots, height = 400, width = 200)) +
   mapview(opening.shp, 
           zcol = "Type", 
           col.regions = c("Red", "Black"),
