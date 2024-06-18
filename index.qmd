@@ -186,7 +186,7 @@ Species Tagged
 
 ### `r icon_style(fontawesome("tag", style = "solid"), scale = 4)`
 
-<font size="+3">79</font>\
+<font size="+3">80</font>\
 Tags Implanted
 
 ### `r icon_style(fontawesome("location-crosshairs", style = "solid"), scale = 4)`
@@ -224,7 +224,7 @@ Species Tagged
 
 ### `r icon_style(fontawesome("tag", style = "solid"), fill = "white", scale = 4)`
 
-<font size="+3">79</font>\
+<font size="+3">80</font>\
 Tags Implanted
 
 ### `r icon_style(fontawesome("location-crosshairs", style = "solid"), fill = "white", scale = 4)`
