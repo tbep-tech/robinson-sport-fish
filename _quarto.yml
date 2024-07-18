@@ -18,7 +18,7 @@ website:
       - updates.qmd
       - data.qmd
       - contact.qmd
-  google-analytics: "G-L3YW0TG447"
+  google-analytics: "G-H3V6FF5NGY"
   sidebar:
     - title: "Methods"
       id: methodology
