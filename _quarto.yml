@@ -18,7 +18,7 @@ website:
       - updates.qmd
       - data.qmd
       - contact.qmd
-  google-analytics: "G-H3V6FF5NGY"
+  google-analytics: "G-68QHMJH3GP"
   sidebar:
     - title: "Methods"
       id: methodology
@@ -28,11 +28,10 @@ website:
         - tagging/works.qmd
 format:
   html:
-    theme: 
+    theme:
       light: [flatly, light.scss]
       dark: [darkly, dark.scss]
     css: styles.css
     toc: false
 
 editor: visual
-
