@@ -205,9 +205,9 @@ pond_tags <- tags %>%
 pond_charts <- pond_tags$plot
 
 
-water_log <- ggplot() +
-  geom_text(aes(0,0,label = "Coming soon")) +
-  theme_void()
+# water_log <- ggplot() +
+#   geom_text(aes(0,0,label = "Coming soon")) +
+#   theme_void()
 # receiver_log <- ggplot(receiver_dat, aes(x, y)) +
 #   geom_line()
 
@@ -256,8 +256,8 @@ mapview(preservedat,
   mapview(logger.shp, 
           col.regions = "blue", 
           cex = 4.5, 
-          layer.name = "Water/Air Loggers", 
-          popup = popupGraph(water_log))
+          layer.name = "Water/Air Loggers") 
+          # popup = popupGraph(water_log))
 ```
 
 </div>
