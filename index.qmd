@@ -16,6 +16,8 @@ Many commercially and recreationally important fishes use estuarine habitats as 
 ```{r}
 #| echo: false
 #| warning: false
+
+#### Load required packages ####
 library(tidyverse)
 library(sf)
 library(mapview)

@@ -11,6 +11,7 @@ Receiver array data were last downloaded May 2024. Our receivers have heard from
 #| error: false
 #| message: false
 
+#### Load all necessary R packages ####
 library(tidyverse)
 library(sf)
 library(mapview)
@@ -19,27 +20,27 @@ library(odbc)
 library(DBI)
 library(dbplyr)
 library(ggimage)
+
+#### Set option to use s2 for Simple Features ####
 sf_use_s2(T)
+
 #### Prep spatial data layers ####
 
 # read in Tampa Bay Shoreline shapefile
 TBshore <- st_read('shapefiles/Tampa_Bay_Shoreline.shp', quiet = T) %>%
-  st_transform(4326)
+  st_transform(4326) # this is to set the proper CRS from NAD83 to WGS 84
 
 # read in Robinson Preserve outline polygon from Manatee County
 preservedat <- st_read('shapefiles/Parks_and_Preserves.shp', quiet = T) %>%
   filter(NAME == 'Robinson Preserve') %>%
   select(NAME, TOTADDRESS, ZIPCODE, PARK_TYPE, ACREAGE, MANAGEMENT, OWNER_NAME, geometry)
 preservedat.shp <- preservedat %>%
-  st_transform(4326)
-  
-# the county shapefile is in WGS 84 and is a multipolygon
+  st_transform(4326) # this is to set the proper CRS from NAD83 to WGS 84
 
 # read in Robinson Preserve expansion project outline polygon
 expansiondat <- st_read('shapefiles/RobPres_Expansion_Poly.shp', quiet = T) %>%
   select(Entity, Layer, DocName, DocType, geometry) %>%
-  #need to transform from NAD83 to WGS 84
-  st_transform(4326)
+  st_transform(4326) # this is to set the proper CRS from NAD83 to WGS 84
 
 #read in FIM pond outlines
 ponddat <- st_read('shapefiles/Robinson_Preserve.shp', quiet = T) %>%
@@ -51,9 +52,6 @@ ponddat <- st_read('shapefiles/Robinson_Preserve.shp', quiet = T) %>%
   group_by(Pond, Type) %>%
   summarise() %>%
   ungroup() %>%
-  # st_cast("POLYGON") %>%
-   
-  # #for the outer polygon
   st_convex_hull()
 
 #locations of water loggers installed during restoration monitoring (different grant than acoustics)
@@ -78,9 +76,9 @@ opening.shp <- openingdat %>%
   st_as_sf(coords = c('LONG_DD', 'LAT_DD'), crs = 4326)
 
 #### Prep data visualizations ####
-water_dat <- data.frame(x = c(1,2), y = c(1,2))
+load("../params.RData") # This loads in the connection parameters to connect to the SQL tagging tables
 
-load("../params.RData")
+# Connect to SQL FSAv1
 conn <- dbConnect(odbc::odbc(),
                   driver = driver,
                   server = server,
@@ -88,6 +86,7 @@ conn <- dbConnect(odbc::odbc(),
                   uid = uid,
                   pwd = pwd)
 
+# Pull in the tagging details from SQL, join to bio and species tables to get scientific name of species, filter for acoustic tags
 tags <- left_join(tbl(conn, in_schema("dbo","tbl_TagDetails")),
                   tbl(conn, in_schema("dbo","tbl_Ref_TagNo")),
                   by = c("TagNo","TagType","TagCode")) %>%
@@ -98,9 +97,10 @@ tags <- left_join(tbl(conn, in_schema("dbo","tbl_TagDetails")),
         filter(TagType == "A") %>%
         collect()
 
+# Read in the acoustic tag data obtained from the receivers
 acoustic <- read_csv("../AllAcoustic.csv")
 
-
+# Filter acoustic data for FIM tags, reassign receiver names as needed, 
 tagged <- acoustic %>%
   mutate(TagCode = str_extract(Transmitter,'-(.*)-(.*)',group = 2)) %>%
   left_join(tags, by = "TagCode") %>%
@@ -115,17 +115,10 @@ tagged <- acoustic %>%
   arrange(CommonName) %>%
   mutate(TagCode = factor(TagCode, levels = unique(TagCode)))
 
-#tagged_plot <- ggplot(tagged) +
-#  geom_point(aes(x = date_time, y = TagCode, color = CommonName, shape = location)) +
-#  scale_shape_manual(values = c(1,19),breaks = c("Outside","Inside")) +
-#  scale_color_manual(values = c("cadetblue4","coral3","darkgoldenrod1", 'gray40'), breaks = c("Tarpon","Red Drum", "Common Snook", 'Black Drum')) +
-#   labs(x = NULL, y = "Fish ID",color = NULL,shape = "Location") +
-#   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
-# tagged_plot
-
+# Assign file names for tagged species to include in pop-out charts (note that these files are stored outside of the GitHub repository)
 fish_images <- data.frame(species = c("Black Drum","Common Snook",'Goliath Grouper',"Red Drum",'Sheepshead',"Tarpon"),img = c("../FishImages/Black Drum.png","../FishImages/Snook.png", "../FishImages/Goliath.png","../FishImages/Red Drum.png","../FishImages/Sheepshead.png","../FishImages/Tarpon.png"))
 
-
+# Produce charts that show the number of detections for each species by each receiver; add images using the geom_image function from ggimage; note that scaling the images and charts took a bit of trial and error, which is why there are some hard-coded numbers for the y values and sizes
 receivers_dat <- full_join(receiver.shp,tagged, by = c("Receiver_Number")) %>%
   group_by(Receiver_Number) %>%
   nest() %>%
@@ -159,12 +152,10 @@ receivers_dat <- full_join(receiver.shp,tagged, by = c("Receiver_Number")) %>%
              theme_void()
          }))
 
-
-
-
-
+# Assign the list of plots to be used in the mapview call
 receiver_plots <- receivers_dat$plot
 
+# Produce charts that show the number of fish tagged for each species in each water body; add images using the geom_image function from ggimage; note that scaling the images and charts took a bit of trial and error, which is why there are some hard-coded numbers for the y values and sizes
 pond_tags <- tags %>%
   mutate(Pond = str_match(Notes,'Pond..')[,1]) %>%
   select(Pond,CommonName) %>%
@@ -196,22 +187,9 @@ pond_tags <- tags %>%
              theme_void()
          })) %>%
   filter(!is.na(Pond))
-  
 
-# receiver_plots <- ggplot() +
-#   geom_text(aes(0,0,label = "Coming soon")) +
-#   theme_void()
-
+# Assign the list of plots to be used in the mapview call
 pond_charts <- pond_tags$plot
-
-
-# water_log <- ggplot() +
-#   geom_text(aes(0,0,label = "Coming soon")) +
-#   theme_void()
-# receiver_log <- ggplot(receiver_dat, aes(x, y)) +
-#   geom_line()
-
-
 ```
 
 <div>
@@ -222,21 +200,29 @@ pond_charts <- pond_tags$plot
 #| error: false
 #| message: false
 #| column: page
-#| height: 900
+#| height: 900 
+
+#### Produce the mapview dynamic map ####
+
+# Set mapview options to include choice of street map or satellite imagery, add legend, and assign height of map
 mapviewOptions(basemaps = c("OpenStreetMap","Esri.WorldImagery"),
                legend.pos = "topright",
                leafletHeight = 1000)
+# Produce mapview plot; mapview builds layers a bit like ggplot using the '+' function
+# Start with preserve polygon
 mapview(preservedat, 
         col.regions = "lightgreen", 
         alpha.regions = 0.2, 
         layer.name = "Robinson Preserve",
         popup = NULL,
         label = FALSE) +
+  # Add pond polygons, with a pop-up showing the number of fish tagged in each pond
   mapview(ponddat, 
           col.regions = "lightblue", 
           layer.name = "Waterbodies",
           label = ponddat$Pond,
           popup = popupGraph(pond_charts, height = 400, width = 200)) +
+  # Add receiver locations, with a pop-up showing the number of detections of each species at each receiver. Note that active receivers are in yellow, inactive are in gray
   mapview(receiver.shp, 
           zcol = 'Status',
           col.regions = c('yellow','gray'), 
@@ -245,6 +231,7 @@ mapview(preservedat,
           layer.name = "Receiver Locations",
           label = receiver.shp$Area_Name,
           popup = popupGraph(receiver_plots, height = 400, width = 200)) +
+  # Add Exit/Entry points
   mapview(opening.shp, 
           zcol = "Type", 
           col.regions = c("Red", "Black"),
@@ -253,6 +240,7 @@ mapview(preservedat,
           popup = NULL,
           label = FALSE,
           layer.name = "Potential Exit/Entry Points") +
+  # Add locations of water/air loggers. Note the commented-out line below; we may eventually want to add in a pop-up graph showing water parameter data, but this is on hold while we sort out the issues with the data
   mapview(logger.shp, 
           col.regions = "blue", 
           cex = 4.5, 

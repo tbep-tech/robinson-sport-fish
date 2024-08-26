@@ -10,13 +10,20 @@ sidebar: false
 #| echo: false
 #| message: false
 #| warning: false
+
+#### Load required packages ####
 library(timevis)
 library(dplyr)
 
-timeItems <- data.frame(id = character(),
-                        content = character(),
-                        start = character(),
-                        end = character()) %>%
+#### Initialize data frame for timevis timeline view ####
+# We used the add_row feature from tidy_verse to build our timeline; if a new update is needed, simply copy the last add_row command (three lines), add a '%>%' to the end of the last row, paste the three lines that were copied onto the end, and change the values for id, content, and start
+timeItems <- data.frame(# The id is a unique identifier for a given update
+                        id = character(), 
+                        # The content contains an HTML-coded link to the update post; this will alwyas be under '/robinson-sport-fish/updates/'. The link should be the name of the quarto file added for the update, but with .html instead of .qmd. The text that will show up in the timeline (linked to the update file) comes in between the carates of the html code. If there is no linked update post, simply add the text of what you want to show on the timeline 
+                        content = character(), 
+                        start = character(), # This is the date of the update
+                        end = character() # This is the end date of the update. Typically this will only be filled in for multi-day events
+                        ) %>%
   add_row(id = "receivers", 
           content = '<a href ="/robinson-sport-fish/updates/receivers.html">Receivers Deployed</a>', 
           start = "2022-04-18") %>%
@@ -73,9 +80,10 @@ timeItems <- data.frame(id = character(),
           content = '<a href ="/robinson-sport-fish/updates/download8.html">Eighth data download</a>',
           start = "2024-05-29")
 
-
+# Create the timevis visualization
 tv <- timevis(timeItems,fit = TRUE)
 
+# Set the visual style for the timevis visualization
  style <- "
    /* alternating column backgrounds */
    .vis-time-axis {
@@ -83,6 +91,7 @@ tv <- timevis(timeItems,fit = TRUE)
    }
  "
  
+# Add the visual style, and plot the visualization
 tv <- htmltools::tagList(htmltools::tags$style(style), tv)
 tv
 
