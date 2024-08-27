@@ -171,7 +171,7 @@ Receivers Placed
 
 ### `r icon_style(fontawesome("download", style = "solid"), scale = 4, 'text-align'="center")`
 
-<font size="+3">8</font>\
+<font size="+3">9</font>\
 Data Downloads
 
 ### `r icon_style(custom_icons('fishing-net-svgrepo-com'), scale = 4)`
@@ -193,7 +193,7 @@ Tags Implanted
 
 ### `r icon_style(fontawesome("location-crosshairs", style = "solid"), scale = 4)`
 
-<font size="+3">2.1 million</font>\
+<font size="+3">2.7 million</font>\
 Detections
 :::
 
@@ -209,7 +209,7 @@ Receivers Placed
 
 ### `r icon_style(fontawesome("download", style = "solid"), fill = "white", scale = 4, 'text-align'="center")`
 
-<font size="+3">8</font>\
+<font size="+3">9</font>\
 Data Downloads
 
 ### `r icon_style(custom_icons('fishing-net-svgrepo-com'), scale = 4, fill = 'white')`
@@ -231,7 +231,7 @@ Tags Implanted
 
 ### `r icon_style(fontawesome("location-crosshairs", style = "solid"), fill = "white", scale = 4)`
 
-<font size="+3">2.1 million</font>\
+<font size="+3">2.7 million</font>\
 Detections
 :::
 :::

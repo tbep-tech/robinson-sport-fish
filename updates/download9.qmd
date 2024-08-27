@@ -1,0 +1,12 @@
+---
+title: "Ninth Data Download"
+author: "Matt Sandburg"
+date: '08/20/2024'
+sidebar: false
+---
+
+On August 20th, FWRI staff recovered data from 9 out of the 10 acoustic receivers deployed in and around Robinson Preserve. Our acoustic receivers revealed an additional 119,673  detections, including detections from 19 of the 80 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside the preserve.
+
+Unfortunately, our Perico Bayou receiver was not successfully located during the download day. Staff will be replacing the receiver to continue detecting fish in Perico Bayou.
+
+Our custom-built temperature loggers continue to undergo testing. FWRI staff were able to successfully download from several of the loggers, but we continue to troubleshoot and test the remaining loggers. The first round of HOBO pendant temperature logger downloads went smoothly.
