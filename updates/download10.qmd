@@ -1,0 +1,10 @@
+---
+title: "Tenth Data Download"
+author: "Matt Sandburg"
+date: '11/25/2024'
+sidebar: false
+---
+
+On November 25th, FWRI staff recovered data from 6 out of the 10 acoustic receivers deployed in and around Robinson Preserve. Our acoustic receivers revealed an additional 159,740 detections, including detections from 19 of the 80 fish that have been tagged since April 2022. Several fish continue to be detected on receivers located outside the preserve.
+
+Unfortunately, multiple receivers were lost during the recent hurricane events. Staff replaced the missing receivers as needed to resume collection of movement data in and around the preserve.
