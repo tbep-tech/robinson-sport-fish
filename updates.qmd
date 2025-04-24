@@ -84,7 +84,13 @@ timeItems <- data.frame(# The id is a unique identifier for a given update
           start = "2024-08-20") %>%
   add_row(id = "download10",
           content = '<a href ="/robinson-sport-fish/updates/download10.html">Tenth data download</a>',
-          start = "2024-11-25")
+          start = "2024-11-25") %>%
+    add_row(id = "download11",
+          content = '<a href ="/robinson-sport-fish/updates/download11.html">Eleventh data download</a>',
+          start = "2024-12-20") %>%
+    add_row(id = "download12",
+          content = '<a href ="/robinson-sport-fish/updates/download12.html">Twelfth data download</a>',
+          start = "2025-03-15")
   
 # Create the timevis visualization
 tv <- timevis(timeItems,fit = TRUE)

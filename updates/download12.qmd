@@ -1,0 +1,10 @@
+---
+title: "Twelfth Data Download"
+author: "Michael Schram"
+date: '03/15/2025'
+sidebar: false
+---
+
+On Feburary 26th, 27th, and March 14th, FWRI staff recovered data from 4 out of the 7 acoustic receivers deployed in and around Robinson Preserve. Our acoustic receivers revealed an additional 67,000 detections, including detections from 1 of the 80 fish that have been tagged since April 2022. We believe many of these fish have since migrated away from the preserve, and most of the acoustic tags are likely no longer active (1.5 year battery life). Given this, it was not surprising that only a few tagged fish were detected during this period.
+
+Three receivers experienced hardware issues and will need to be sent to the manufacturer for and data recovery. In the meantime, FWRI staff deployed temporary replacement receivers in key areas throughout Robinson Preserve to ensure we continue collecting valuable data.

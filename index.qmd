@@ -162,7 +162,7 @@ custom_icons <- icon_set('images/icons')
 
 The Robinson Preserve Sport Fish Tagging Project was initiated to determine the extent to which the habitat restoration at [Robinson Preserve](https://www.mymanatee.org/departments/natural_resources/preserves/robinson), a 682-acre area with a variety of restored fisheries nursery habitat, contributes juvenile sport fish to adult populations in the greater Tampa Bay area. The contribution of juveniles is a major information gap that exists for many habitat restoration projects, despite being a realistic metric for evaluating restoration success. With the help of the [Manatee County Natural Resources Department](https://www.mymanatee.org/departments/natural_resources) and the [National Oceanic and Atmospheric Administration Office of Habitat Conservation](https://www.fisheries.noaa.gov/about/office-habitat-conservation), researchers at the [Florida Fish and Wildlife Research Institute](https://myfwc.com/research/) are seeking to fill this information gap by tagging and tracking the movement of juvenile sport fishes from and within Robinson Preserve.
 
-::: {.light-mode style="text-align: center; justify-content: center; align-items: center;"}
+::::: {.light-mode style="text-align: center; justify-content: center; align-items: center;"}
 ::: {.light-mode layout-ncol="3" style="text-align: center; justify-content: center; align-items: center;"}
 ### `r icon_style(fontawesome("tower-broadcast", style = "solid"), scale = 4)`
 
@@ -171,7 +171,7 @@ Receivers Placed
 
 ### `r icon_style(fontawesome("download", style = "solid"), scale = 4, 'text-align'="center")`
 
-<font size="+3">10</font>\
+<font size="+3">12</font>\
 Data Downloads
 
 ### `r icon_style(custom_icons('fishing-net-svgrepo-com'), scale = 4)`
@@ -193,14 +193,14 @@ Tags Implanted
 
 ### `r icon_style(fontawesome("location-crosshairs", style = "solid"), scale = 4)`
 
-<font size="+3">2.9 million</font>\
+<font size="+3">3.1 million</font>\
 Detections
 :::
 
 ### 
-:::
+:::::
 
-::: {.dark-mode style="text-align: center; justify-content: center; align-items: center;"}
+::::: {.dark-mode style="text-align: center; justify-content: center; align-items: center;"}
 ::: {.dark-mode layout-ncol="3" style="text-align: center; justify-content: center; align-items: center;"}
 ### `r icon_style(fontawesome("tower-broadcast", style = "solid"), fill = "white", scale = 4)`
 
@@ -209,7 +209,7 @@ Receivers Placed
 
 ### `r icon_style(fontawesome("download", style = "solid"), fill = "white", scale = 4, 'text-align'="center")`
 
-<font size="+3">10</font>\
+<font size="+3">12</font>\
 Data Downloads
 
 ### `r icon_style(custom_icons('fishing-net-svgrepo-com'), scale = 4, fill = 'white')`
@@ -231,7 +231,7 @@ Tags Implanted
 
 ### `r icon_style(fontawesome("location-crosshairs", style = "solid"), fill = "white", scale = 4)`
 
-<font size="+3">2.9 million</font>\
+<font size="+3">3.1 million</font>\
 Detections
 :::
-:::
+:::::
