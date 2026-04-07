@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.19">
+<meta name="generator" content="quarto-1.9.5">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,16 +34,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2f888a9df4d438511fe441eb1046b373.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a90412ab12e10e4c76bfe8821856a4ea.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2e0b4708489a94d7cf3aaa82802539fe.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d2c802e77a2028df721c7926edd66dc0.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2e0b4708489a94d7cf3aaa82802539fe.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dark-5e82bc60f329b098df0352cfef655320.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-1da2990196831a40a7336b77e236936c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-1b0518026a90cec863ba74968abf8ebe.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d3fc718c92dd47f93b99ff03a0e4ecfc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-1b0518026a90cec863ba74968abf8ebe.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,7 +112,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-68QHMJH3GP', { 'anonymize_ip': true});
 </script>
-<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
 
 <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 
@@ -138,7 +141,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -157,70 +160,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Robinson Preserve Sport Fish</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">About</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
-        <li>
-    <a class="dropdown-item" href="./preserve.html">
- <span class="dropdown-text">Robinson Preserve</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./methods.html">
- <span class="dropdown-text">Methodology</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="./updates.html" aria-current="page"> 
-<span class="menu-text">Project Updates</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./data.html"> 
-<span class="menu-text">Interactive Data Map</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
-<span class="menu-text">Contact</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content" id="quarto-document-content">
-<script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -238,14 +178,26 @@ window.Quarto = {
         toggleBodyColorMode(bsSheetEl);
       }
     }
-    toggleBodyColorPrimary();
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
     const toggleColorMode = (alternate) => {
       // Switch the stylesheets
       const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
       const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
       manageTransitions('#quarto-margin-sidebar .nav-link', false);
       if (alternate) {
-        disableStylesheet(primaryStylesheets)
+        // note: dark is layered on light, we don't disable primary!
         enableStylesheet(alternateStylesheets);
         for (const sheetNode of alternateStylesheets) {
           if (sheetNode.id === "quarto-bootstrap") {
@@ -259,17 +211,7 @@ window.Quarto = {
       }
       manageTransitions('#quarto-margin-sidebar .nav-link', true);
       // Switch the toggles
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
+      setColorSchemeToggle(alternate)
       // Hack to workaround the fact that safari doesn't
       // properly recolor the scrollbar when toggling (#1455)
       if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
@@ -333,7 +275,37 @@ window.Quarto = {
         return localAlternateSentinel;
       }
     }
-    const darkModeDefault = false;
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
     // Dark / light mode switch
     window.quartoToggleColorScheme = () => {
@@ -342,6 +314,7 @@ window.Quarto = {
       toggleColorMode(toAlternate);
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
     };
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
@@ -350,6 +323,71 @@ window.Quarto = {
       toggleColorMode(false);
     }
   </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Robinson Preserve Sport Fish</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="./preserve.html">
+ <span class="dropdown-text">Robinson Preserve</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./methods.html">
+ <span class="dropdown-text">Methodology</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="./updates.html" aria-current="page"> 
+<span class="menu-text">Project Updates</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./data.html"> 
+<span class="menu-text">Interactive Data Map</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -378,13 +416,13 @@ window.Quarto = {
      background: white;
    }
  </style>
-<div class="timevis html-widget html-fill-item" id="htmlwidget-ed14d116b9fcdc42adf4" style="width:100%;height:338px;">
+<div class="timevis html-widget html-fill-item" id="htmlwidget-0a771dbdd1a9b5996811" style="width:100%;height:338px;">
 <div class="btn-group zoom-menu">
 <button type="button" class="btn btn-default btn-lg zoom-in" title="Zoom in">+</button>
 <button type="button" class="btn btn-default btn-lg zoom-out" title="Zoom out">-</button>
 </div>
 </div>
-<script type="application/json" data-for="htmlwidget-ed14d116b9fcdc42adf4">{"x":{"items":[{"id":"receivers","content":"<a href =\"/robinson-sport-fish/updates/receivers.html\">Receivers Deployed<\/a>","start":"2022-04-18"},{"id":"website","content":"<a href =\"/robinson-sport-fish/updates/first.html\">Website Deployed<\/a>","start":"2022-06-16"},{"id":"start","content":"Project start; planning and purchasing begins","start":"2021-10-01"},{"id":"tag1","content":"<a href =\"/robinson-sport-fish/updates/tagging1.html\">22 fish tagged<\/a>","start":"2022-04-27"},{"id":"download1","content":"<a href =\"/robinson-sport-fish/updates/download1.html\">First data download<\/a>","start":"2022-08-24"},{"id":"talk1","content":"<a href = \"https://www.youtube.com/watch?v=H_kvWPZzJ7Y\">Virtual Outreach Event<\/a>","start":"2022-09-15"},{"id":"talk2","content":"In-Person Outreach Event<br>\n                     Robinson Preserve, 9am-11am","start":"2022-11-12"},{"id":"tag2","content":"<a href =\"/robinson-sport-fish/updates/tagging2.html\">4 fish tagged<\/a>","start":"2022-11-17"},{"id":"download2","content":"<a href =\"/robinson-sport-fish/updates/download2.html\">Second data download<\/a>","start":"2022-12-05"},{"id":"youtube","content":"<a href =\"https://youtube.com/shorts/2IWgYjh7rh8?feature=share\">Youtube Short published<\/a>","start":"2023-02-07"},{"id":"download3","content":"<a href =\"/robinson-sport-fish/updates/download3.html\">Third data download<\/a>","start":"2023-02-22"},{"id":"tag3","content":"<a href =\"/robinson-sport-fish/updates/tagging3.html\">15 fish tagged<\/a>","start":"2023-03-28"},{"id":"download4","content":"<a href =\"/robinson-sport-fish/updates/download4.html\">Fourth data download<\/a>","start":"2023-05-18"},{"id":"tag4","content":"<a href =\"/robinson-sport-fish/updates/tagging4.html\">9 fish tagged<\/a>","start":"2023-06-29"},{"id":"download5","content":"<a href =\"/robinson-sport-fish/updates/download5.html\">Fifth data download<\/a>","start":"2023-08-15"},{"id":"download6","content":"<a href =\"/robinson-sport-fish/updates/download6.html\">Sixth data download<\/a>","start":"2023-11-17"},{"id":"download7","content":"<a href =\"/robinson-sport-fish/updates/download7.html\">Seventh data download<\/a>","start":"2024-02-29"},{"id":"download8","content":"<a href =\"/robinson-sport-fish/updates/download8.html\">Eighth data download<\/a>","start":"2024-05-29"},{"id":"download9","content":"<a href =\"/robinson-sport-fish/updates/download9.html\">Ninth data download<\/a>","start":"2024-08-20"},{"id":"download10","content":"<a href =\"/robinson-sport-fish/updates/download10.html\">Tenth data download<\/a>","start":"2024-11-25"},{"id":"download11","content":"<a href =\"/robinson-sport-fish/updates/download11.html\">Eleventh data download<\/a>","start":"2024-12-20"},{"id":"download12","content":"<a href =\"/robinson-sport-fish/updates/download12.html\">Twelfth data download<\/a>","start":"2025-03-15"}],"groups":null,"showZoom":true,"zoomFactor":0.5,"fit":true,"options":[],"height":null,"timezone":null,"api":[]},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-0a771dbdd1a9b5996811">{"x":{"items":[{"id":"receivers","content":"<a href =\"/robinson-sport-fish/updates/receivers.html\">Receivers Deployed<\/a>","start":"2022-04-18"},{"id":"website","content":"<a href =\"/robinson-sport-fish/updates/first.html\">Website Deployed<\/a>","start":"2022-06-16"},{"id":"start","content":"Project start; planning and purchasing begins","start":"2021-10-01"},{"id":"tag1","content":"<a href =\"/robinson-sport-fish/updates/tagging1.html\">22 fish tagged<\/a>","start":"2022-04-27"},{"id":"download1","content":"<a href =\"/robinson-sport-fish/updates/download1.html\">First data download<\/a>","start":"2022-08-24"},{"id":"talk1","content":"<a href = \"https://www.youtube.com/watch?v=H_kvWPZzJ7Y\">Virtual Outreach Event<\/a>","start":"2022-09-15"},{"id":"talk2","content":"In-Person Outreach Event<br>\n                     Robinson Preserve, 9am-11am","start":"2022-11-12"},{"id":"tag2","content":"<a href =\"/robinson-sport-fish/updates/tagging2.html\">4 fish tagged<\/a>","start":"2022-11-17"},{"id":"download2","content":"<a href =\"/robinson-sport-fish/updates/download2.html\">Second data download<\/a>","start":"2022-12-05"},{"id":"youtube","content":"<a href =\"https://youtube.com/shorts/2IWgYjh7rh8?feature=share\">Youtube Short published<\/a>","start":"2023-02-07"},{"id":"download3","content":"<a href =\"/robinson-sport-fish/updates/download3.html\">Third data download<\/a>","start":"2023-02-22"},{"id":"tag3","content":"<a href =\"/robinson-sport-fish/updates/tagging3.html\">15 fish tagged<\/a>","start":"2023-03-28"},{"id":"download4","content":"<a href =\"/robinson-sport-fish/updates/download4.html\">Fourth data download<\/a>","start":"2023-05-18"},{"id":"tag4","content":"<a href =\"/robinson-sport-fish/updates/tagging4.html\">9 fish tagged<\/a>","start":"2023-06-29"},{"id":"download5","content":"<a href =\"/robinson-sport-fish/updates/download5.html\">Fifth data download<\/a>","start":"2023-08-15"},{"id":"download6","content":"<a href =\"/robinson-sport-fish/updates/download6.html\">Sixth data download<\/a>","start":"2023-11-17"},{"id":"download7","content":"<a href =\"/robinson-sport-fish/updates/download7.html\">Seventh data download<\/a>","start":"2024-02-29"},{"id":"download8","content":"<a href =\"/robinson-sport-fish/updates/download8.html\">Eighth data download<\/a>","start":"2024-05-29"},{"id":"download9","content":"<a href =\"/robinson-sport-fish/updates/download9.html\">Ninth data download<\/a>","start":"2024-08-20"},{"id":"download10","content":"<a href =\"/robinson-sport-fish/updates/download10.html\">Tenth data download<\/a>","start":"2024-11-25"},{"id":"download11","content":"<a href =\"/robinson-sport-fish/updates/download11.html\">Eleventh data download<\/a>","start":"2024-12-20"},{"id":"download12","content":"<a href =\"/robinson-sport-fish/updates/download12.html\">Twelfth data download<\/a>","start":"2025-03-15"},{"id":"download13","content":"<a href =\"/robinson-sport-fish/updates/download12.html\">Thirteenth data download<\/a>","start":"2025-06-26"},{"id":"download14","content":"<a href =\"/robinson-sport-fish/updates/download12.html\">Fourteenth data download<\/a>","start":"2025-09-2"},{"id":"download15","content":"<a href =\"/robinson-sport-fish/updates/download12.html\">Fifteenth data download<\/a>","start":"2026-01-26"}],"groups":null,"showZoom":true,"zoomFactor":0.5,"fit":true,"options":[],"height":null,"timezone":null,"api":[]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -393,7 +431,82 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1742011200000" data-listing-file-modified-sort="1745506967334" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="132">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1768366800000" data-listing-file-modified-sort="1775568232415" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="81">
+<div class="thumbnail"><a href="./updates/download15.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./updates/download15.html" class="no-external">Fifteenth Data Download</a>
+</h3>
+<div class="delink listing-description"><a href="./updates/download15.html" class="no-external">
+On January 14th, FWRI staff recovered data from 7 out of the 7 acoustic receivers deployed in and around Robinson Preserve. Our acoustic receivers revealed an additional…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./updates/download15.html" class="no-external">
+<div class="listing-date">
+Jan 14, 2026
+</div>
+<div class="listing-author">
+Michael Schram
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1758513600000" data-listing-file-modified-sort="1775567869239" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="118">
+<div class="thumbnail"><a href="./updates/download14.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./updates/download14.html" class="no-external">Fourteenth Data Download</a>
+</h3>
+<div class="delink listing-description"><a href="./updates/download14.html" class="no-external">
+On September 22nd, FWRI staff recovered data from 6 out of the 7 acoustic receivers deployed in and around Robinson Preserve. Our acoustic receivers revealed an additional…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./updates/download14.html" class="no-external">
+<div class="listing-date">
+Sep 22, 2025
+</div>
+<div class="listing-author">
+Michael Schram
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1750824000000" data-listing-file-modified-sort="1775568255680" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="102">
+<div class="thumbnail"><a href="./updates/download13.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./updates/download13.html" class="no-external">Thirteenth Data Download</a>
+</h3>
+<div class="delink listing-description"><a href="./updates/download13.html" class="no-external">
+On June 25th, FWRI staff recovered data from 7 out of 7 acoustic receivers deployed in and around Robinson Preserve. Our acoustic receivers revealed an additional 135,000…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./updates/download13.html" class="no-external">
+<div class="listing-date">
+Jun 25, 2025
+</div>
+<div class="listing-author">
+Michael Schram
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1742011200000" data-listing-file-modified-sort="1745506967000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="132">
 <div class="thumbnail"><a href="./updates/download12.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -418,7 +531,7 @@ Michael Schram
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1734670800000" data-listing-file-modified-sort="1745506719897" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="89">
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1734670800000" data-listing-file-modified-sort="1745506719000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="89">
 <div class="thumbnail"><a href="./updates/download11.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -443,7 +556,7 @@ Michael Schram
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1732510800000" data-listing-file-modified-sort="1743598277868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="83">
+<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1732510800000" data-listing-file-modified-sort="1743598277000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="83">
 <div class="thumbnail"><a href="./updates/download10.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -468,7 +581,7 @@ Matt Sandburg
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1724126400000" data-listing-file-modified-sort="1743598277884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
+<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1724126400000" data-listing-file-modified-sort="1743598277000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="122">
 <div class="thumbnail"><a href="./updates/download9.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -493,7 +606,7 @@ Matt Sandburg
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1716955200000" data-listing-file-modified-sort="1743598277884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
+<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1716955200000" data-listing-file-modified-sort="1743598277000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
 <div class="thumbnail"><a href="./updates/download8.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -518,7 +631,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1711252800000" data-listing-file-modified-sort="1743598277884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="262">
+<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1711252800000" data-listing-file-modified-sort="1743598277000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="262">
 <div class="thumbnail"><a href="./updates/download7.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -543,7 +656,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1700197200000" data-listing-file-modified-sort="1743598277884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
+<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1700197200000" data-listing-file-modified-sort="1743598277000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
 <div class="thumbnail"><a href="./updates/download6.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -568,7 +681,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1692072000000" data-listing-file-modified-sort="1743598277884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
+<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1692072000000" data-listing-file-modified-sort="1743598277000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
 <div class="thumbnail"><a href="./updates/download5.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -593,7 +706,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1688011200000" data-listing-file-modified-sort="1743598278000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="83">
+<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1688011200000" data-listing-file-modified-sort="1743598278000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="83">
 <div class="thumbnail"><a href="./updates/tagging4.html" class="no-external">
 
 <p class="card-img-top"><img src="updates\images\GoliathTag.jpeg"  class="thumbnail-image card-img"/></p>
@@ -618,7 +731,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1684728000000" data-listing-file-modified-sort="1743598277868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="99">
+<div class="quarto-post image-right" data-index="12" data-listing-date-sort="1684728000000" data-listing-file-modified-sort="1743598277000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="99">
 <div class="thumbnail"><a href="./updates/download4.html" class="no-external">
 
 <p class="card-img-top"><img src="updates\images\IMG_4220.jpeg" alt="Two FWRI staff members standing in the water in Robinson Preserve, one holding the housing for an acoustic array and the other holding a water quality logger in its housing"  class="thumbnail-image card-img"/></p>
@@ -643,7 +756,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1679976000000" data-listing-file-modified-sort="1743598278000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
+<div class="quarto-post image-right" data-index="13" data-listing-date-sort="1679976000000" data-listing-file-modified-sort="1743598278000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
 <div class="thumbnail"><a href="./updates/tagging3.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -668,7 +781,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1677819600000" data-listing-file-modified-sort="1743598277868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
+<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1677819600000" data-listing-file-modified-sort="1743598277000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="78">
 <div class="thumbnail"><a href="./updates/download3.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -693,7 +806,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-listing-date-sort="1670216400000" data-listing-file-modified-sort="1743598277868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
+<div class="quarto-post image-right" data-index="15" data-listing-date-sort="1670216400000" data-listing-file-modified-sort="1743598277000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
 <div class="thumbnail"><a href="./updates/download2.html" class="no-external">
 
 <p class="card-img-top"><img src="updates\images\JonBoat_with_SamplingGear.jpg"  class="thumbnail-image card-img"/></p>
@@ -718,7 +831,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-listing-date-sort="1668661200000" data-listing-file-modified-sort="1743598278000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
+<div class="quarto-post image-right" data-index="16" data-listing-date-sort="1668661200000" data-listing-file-modified-sort="1743598278000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
 <div class="thumbnail"><a href="./updates/tagging2.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -743,7 +856,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1663646400000" data-listing-file-modified-sort="1743598277868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="65">
+<div class="quarto-post image-right" data-index="17" data-listing-date-sort="1663646400000" data-listing-file-modified-sort="1743598277000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="65">
 <div class="thumbnail"><a href="./updates/download1.html" class="no-external">
 
 <p class="card-img-top"><img src="updates\images\paste-4CA43DDD.png"  class="thumbnail-image card-img"/></p>
@@ -768,7 +881,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-listing-date-sort="1655265600000" data-listing-file-modified-sort="1743598277884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
+<div class="quarto-post image-right" data-index="18" data-listing-date-sort="1655265600000" data-listing-file-modified-sort="1743598277000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
 <div class="thumbnail"><a href="./updates/first.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -793,7 +906,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-listing-date-sort="1651032000000" data-listing-file-modified-sort="1743598278000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="88">
+<div class="quarto-post image-right" data-index="19" data-listing-date-sort="1651032000000" data-listing-file-modified-sort="1743598278000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="88">
 <div class="thumbnail"><a href="./updates/tagging1.html" class="no-external">
 
 <p class="card-img-top"><img src="images\tagging1.jpg"  class="thumbnail-image card-img"/></p>
@@ -818,7 +931,7 @@ Jon Peake
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-listing-date-sort="1650254400000" data-listing-file-modified-sort="1743598278000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="699">
+<div class="quarto-post image-right" data-index="20" data-listing-date-sort="1650254400000" data-listing-file-modified-sort="1743598278000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="699">
 <div class="thumbnail"><a href="./updates/receivers.html" class="no-external">
 
 <p class="card-img-top"><img src="images\receiver2.jpg"  class="thumbnail-image card-img"/></p>
@@ -860,33 +973,7 @@ Jon Peake
       a.appendChild(i);
       window.document.body.appendChild(a);
     }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(darkModeDefault) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -936,13 +1023,14 @@ Jon Peake
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

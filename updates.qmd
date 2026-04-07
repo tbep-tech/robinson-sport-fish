@@ -85,12 +85,21 @@ timeItems <- data.frame(# The id is a unique identifier for a given update
   add_row(id = "download10",
           content = '<a href ="/robinson-sport-fish/updates/download10.html">Tenth data download</a>',
           start = "2024-11-25") %>%
-    add_row(id = "download11",
+  add_row(id = "download11",
           content = '<a href ="/robinson-sport-fish/updates/download11.html">Eleventh data download</a>',
           start = "2024-12-20") %>%
-    add_row(id = "download12",
+  add_row(id = "download12",
           content = '<a href ="/robinson-sport-fish/updates/download12.html">Twelfth data download</a>',
-          start = "2025-03-15")
+          start = "2025-03-15") %>%
+  add_row(id = "download13",
+          content = '<a href ="/robinson-sport-fish/updates/download12.html">Thirteenth data download</a>',
+          start = "2025-06-26") %>%
+  add_row(id = "download14",
+          content = '<a href ="/robinson-sport-fish/updates/download12.html">Fourteenth data download</a>',
+          start = "2025-09-2") %>%
+  add_row(id = "download15",
+          content = '<a href ="/robinson-sport-fish/updates/download12.html">Fifteenth data download</a>',
+          start = "2026-01-26") 
   
 # Create the timevis visualization
 tv <- timevis(timeItems,fit = TRUE)

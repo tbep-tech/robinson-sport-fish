@@ -3,3 +3,4 @@
 .Rhistory
 *.doc
 *.docx
+**/*.quarto_ipynb
